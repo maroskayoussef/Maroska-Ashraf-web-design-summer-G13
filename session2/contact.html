@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>   
+
+</head>
+<body>       
+    <!--action:the destination page where the form data will be sent-->
+    <form autocomplete="off" action="index.html" method="post">
+        <!--label,input=> inline elements-->  
+        <label> full name</label>
+        <!--id: to mark the attribute-->
+        <input type="text" id="fullname" name="fullname" required><!--name attribute zaala hasab btaa el backend msamyha eh-->
+        <br>
+        <label>email</label>
+        <input type="email" name="email" required>
+        <!--button open closed tag aadar ahot fi other tags input la-->
+        <input type="submit"  value="Register">
+        <button type="submit">login</button>
+        <!--submit btaamel clear w tbaat info l database-->
+        <button type="submit">Submit</button>
+
+
+        <br>
+        <input type="password" name="userpassword" 
+        title="Password must be at least 8 characters long" disabled  required placeholder="Enter your password"  pattern="[A-Za-z0-9]{8,}"> <!--disabled no input msh bttb3et ll database /readonly bttb3et lldata base-->
+       
+        <!--pattern: yb2a 8 characters aw akbar w yb2a letters aw numbers--> 
+        <br>
+        <!--autocmplete: y save el inputs abl keda-->
+        <input type="number" autocomplete="off" placeholder ="enter your age" required name="age" step="10"><!--ybaa lazem nhot 3asharat w byzawed bl 10-->
+
+        <br>
+
+        <label> gender</label>
+        <input type="radio" name="userGender" value="male"><label> male</label> <!--hatena nafs el name ala male w female ashan n choose only one, value:elayzeno ywsal ll databse-->
+        <input type ="radio" name="userGender" value="female"><span>female</span> <!--span w label sah bs label mn elements el form-->
+    
+        <br>
+
+        <input type="checkbox" name="prLanguage" value="java"> <label>java</label>
+        <input type="checkbox" name="prLanguage" value="js"><label>javascript</label>
+        <input type="checkbox" name="prLanguage" value="python"><label>python</label>
+
+        <br>
+
+        <label>courses</label>
+        <select name="courses" multuiple required>
+            <option selected disabled> choose courses</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+
+        
+        <br><!--search for attribiute accept, max, min,step, datalist -->
+        <input type="file" name="userFile" multiple> <!--multiple: yb2a aadar a7ot aktr mn file-->
+        <input type="reset" value="clear"> 
+        <!--naamel button lw ayzeen n customize-->
+        <button type="reset">Reset</button>
+
+        <br>
+        <input type="date">
+        <input type="month">
+        <input type="datetime-local">
+        <input type="color">
+    </form>
+    <!--type button bywa2af action-->
+    <button type="button">submit</button>
+</body>
