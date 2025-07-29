@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box; /*all elements in the page: universe style*/
+    margin:0; /* we can change this for specific elements*/
+    padding:0; /* we can change this for specific elements*/
+}
+
+/*priority of classes are higher kolhom executed w last one howa elbyban (overrides el ablu)*/
+/*inline highest priority not preferred msh bnaaraf nwsal ll element to modify on small screens lazm mn code*/
+/* mn element .style fl web page naamel color ll element w ncustomize ay haga for element or a href
+display:inline-block ynfa3 naamel margin w padding w width l inline element gowa eleemnt.style mn gher ma ytlaa ala elements gambu
+bthsal spaces between div elements fl inline block elements bsabas enter el maben div w div fl code fa instead of enter naamel comment ala el line between divs aw nbdaa div gamb end el div el ablaha*/
+h1 /*tag name not a class*/{
+    color:blue
+
+}
+
+a{
+    text-decoration: none; /* ashan a href aytalaash kalam bl grey taht el tab bar*/
+}
+
+.text-grey {
+    color: grey;
+}
+
+.bg-lightblue {
+    background-color: lightblue;
+}
+
+/* id priority higher than classes*/
+/*gowa inspect fl page momkn akteb !important gamb ai value haybayenha regardless of priority*/
+#h1-style {
+    color: blue;
+   
+}
+
+.h3-style {
+    color: blue;
+    font-size: 24px;
+    text-align: center;
+    background-color: lightblue;
+    padding: 3%;
+}
+
+/*px or %*/
+.divstyle{
+    background-color: rgb(255, 0, 0);
+    color: #ff0000;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /*orr clockwise direction*/
+    padding:2% 2% 1% 2%;
+    /*fo2 ymeen w taht shemal*/
+    padding: 2% 2%;
+
+    /*fo2 w ymeen shemal w taht*/
+    padding: 2% 3% 4%;
+
+    /*all directions w akher property overrides the rest*/
+    padding: 3%;
+    width:40%; /*width 40% of the parent element in our case the body*/
+    /*margin between elements paddding within the element*/
+    margin:4%;
+    margin-left: 3%;
+    margin-left:auto; /*kol elmasafa elfadya elgambo ashan width 40% bas tigi left margin*/
+    margin-right: auto; /*maa left tgyb element center*/
+    border-top-width: 4px;
+    border-top-color: aqua;/*law mhatetsh color it will take the parent color div in our case*/
+    border-top-style:dashed;
+    border-radius: 8px; /*rounded corners*/
+    box-sizing: border-box; /*padding w border yethesbo fl width*/
+}
+
+.divstyle h3{ /*h3 tag inside divstyle class*/
+     color:blue
+     font-size: 24px;
+    text-align: center;
+    background-color: lightblue;
+    padding: 3%;
+}
+
+.divstyle a{
+
+}
+
+#registerForm  {
+   padding:2%;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+#registerForm input {
+    border: none;
+    padding:3%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+h2,h3,h4, .divstyle, #registerForm  {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    
+}

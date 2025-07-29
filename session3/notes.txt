@@ -1,0 +1,13 @@
+css selectors==> inline element style
+externals heeet
+internal sheet
+
+border=> style,width w color
+
+display==>block(ngeeb element taht elgambaha), inline, inline-block
+
+nzabat spaces b margin, width kaman ytzabat b %
+
+text-decoration==>underline (default in a href), overline, line through, none
+
+height element yshatghal bl % lama height parent ybaa in pixels; we can use padding to increase height.
