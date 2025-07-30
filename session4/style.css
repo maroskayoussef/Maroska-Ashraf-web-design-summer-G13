@@ -1,0 +1,110 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:inherit; /*ashan takhd parent's color*/
+}
+
+/* global style */
+body{
+    /* maynfaash margin or padding on the body some elements might need to be aswide as the screen*/
+    margin: 0% 5%;
+}
+
+.bg-dark{
+    background-color: rgb(13, 13, 13);
+}
+
+.text-white{ /*because we need many white text*/
+    color:white;
+}
+
+.container{
+    width:80%;
+    margin:0% auto;
+}
+
+.ul{
+    list-style: none;
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+.text-light{
+    color: lightgray
+}
+
+.bg-light{
+    background-color: lightgray;
+    padding:3% 0%;
+}
+
+.float-left{ /*float ignores inline block*/
+    float:left;
+    margin:0% 5%;
+}
+
+.float-right{ /*if two elements are used not more*/
+    float:right;
+}
+
+.clear{ /*with float to resolve thhe problems of float left aand right: makes the divs return to the parent layer*/
+    clear:both;
+}
+.card{
+    width:30%;
+    /*border: 1px solid gray;*/
+    /*box-shadoew: xaxis yaxis blur spread*/
+    box-shadow: 0px 0px 5px 3px lightgray;
+    display: inline-block;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-body{
+    padding: 3%;
+}
+
+.card-body h3{
+    margin-bottom: 2%;
+}
+
+.button{
+    font-weight:bold;
+    border: 2px solid ; /*outset is default*/
+}
+
+
+/*custom style*/
+#banner{
+    /*two dots yaanee go back a step ll folders*/
+    background-image: url(../folder/pic);
+    /*background-repeat: no-repeat; aw x aw y*/
+    background-color: antiquewhite; /*law no repeat fa fi part msh zaher bg color byban*/
+    background-position-x: right;
+    background-size: 100% 100%; /*el msaha el htt3red fiha el pic*/
+
+
+}
+
+.overlay{
+    background-color: rgb(62, 61, 61);/*mn rgb aw hex fl inspect nghama2 w nfataha color*/
+    color:white;
+    height:100%;
+    padding: 8% 0%;
+}
+
+
+.custom-h2{
+
+}

@@ -1,0 +1,196 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit; /*ashan takhd parent's color*/
+}
+
+/*global style*/
+.nav-style{
+    background-color: black;
+    /*padding:0.5% 0.5%;*/
+    color:white;
+    height:80px;
+}
+
+.nav-AXIT{
+    margin:1.5% 1% 0% 13%;
+    display:inline-block;
+    font-size: large;
+}
+
+.small-font{
+     font-weight: normal;
+}
+
+
+.bigtext-style{
+    font-size: 100px;;
+}
+
+.largetext-style{
+    font-size: 50px;
+}
+
+.orange-text{
+    color: #FF8B38;
+}
+
+.white-text{
+    color: white;
+}
+.d-inline-block{
+    display: inline-block;
+}
+
+.ul{
+    list-style: none;
+    width:30%;
+   
+    margin:2% 7% 7% 0.5%;
+}
+
+
+.float-right{
+    float:right;
+}
+
+.clear{
+    clear:both;
+}
+
+
+.margin-bottom{
+    margin-bottom: 0.8%;
+}
+
+.marginbottomsmaller{
+    margin-bottom: 4%;
+}
+
+.font-type{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/*customized*/
+
+#banner{
+    background-image: url(../images/top-landmarks-in-italy.jpg);
+    background-size: 100% 100%;
+    height:620px;
+
+}
+
+.outlay{
+    background-color: #0000008a;
+    color:white;
+    height:100%;
+    padding: 5% 0%;
+
+}
+
+.container{
+    margin-top: 1%;
+    margin-left: 13%; 
+    margin-right: 0%;
+    width:50%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grayfont{
+    color: gray;
+}
+
+.margin-left{
+    margin-left:7% ;
+}
+
+
+
+.download-style{
+    text-align: center;
+    border-color: white;
+    border: solid;
+    padding: 1%;
+    display: inline-block;
+    width: 15%;
+
+}
+
+.hr-style{
+    width:7%;
+    border:none;
+    height:2.5px;
+    background-color: white;
+    margin-bottom: 4%;
+}
+
+.form-style
+{
+    background-color: white;
+    margin-top: 4%;
+    margin-right: 5%;
+    width:25%;
+    height:70%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px ;
+}
+
+.formheader{
+    background: #F5F5F5;
+    color: #303030;
+    width:100%;
+    height:20%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    display:inline-block;
+
+       border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.free-style{
+    display: inline-block;
+    color: #FF8B38;
+}
+
+.formfield{
+    width: 80%;
+  padding: 12px;
+  margin: 10px auto;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+
+}
+
+.submit-button{
+    width:100%;
+    background-color: #FF8B38;
+    border: none;
+    margin-bottom: 0;
+    color: white;
+    height:20%;
+    font-size: 16px;
+    margin-top: 10%;;
+        border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
