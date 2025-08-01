@@ -16,6 +16,10 @@ body{
     margin: 0% 5%;
 }
 
+.nav{
+    z-index: 999;
+}
+
 .bg-dark{
     background-color: rgb(13, 13, 13);
 }
@@ -59,6 +63,23 @@ body{
 .clear{ /*with float to resolve thhe problems of float left aand right: makes the divs return to the parent layer*/
     clear:both;
 }
+
+.position-relative{ /* ashan button travel ybaa f hodud el parent not the screen w howa absolute*/
+    position: relative;
+}
+
+.overlay-absolute{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+}
+
+.card:hover .overlay-absolute{
+    /*lama n hover on card overlay yban w elkalam el aleh*/
+    display: block;
+}
+
 .card{
     width:30%;
     /*border: 1px solid gray;*/
@@ -69,6 +90,7 @@ body{
 
 .card img{
     width: 100%;
+    display: block; /*ashan ymla div maybaash overlay bayen mslan lw hya inline block*/
 }
 
 .card-body{
@@ -82,8 +104,20 @@ body{
 .button{
     font-weight:bold;
     border: 2px solid ; /*outset is default*/
+
 }
 
+/*below is pesudo property lama ashawer ala this element bs*/
+.button:hover{
+    background-color: blue;
+    color: white;
+}
+
+/*h3 el gowa card haytghayar colors lama n hover anywhere in card*/
+.card:hover h3{
+    color: blue;
+    font-size: 30px;
+}
 
 /*custom style*/
 #banner{
@@ -102,9 +136,27 @@ body{
     color:white;
     height:100%;
     padding: 8% 0%;
+    display:none;
 }
 
 
-.custom-h2{
+.custom-arrow{
+    border-radius: 50%; /*makes a circle when weight=height*/
 
 }
+
+/*position ==> fixed sticky relatiive absolute static(default)*/
+/*fixed byakhod el nav bara layer lwahdu sometimes bybawaz eldonya fix b widthh : ykhaly nav yigi ala pic background eltahtu*/
+/*sticky: between static(mghayarnsh layer w btbayen elements fo2eeh bcz fixed doesnt when top:0) and fixed when top:0 tsbat fo2 while scrolling */
+/*left right top bottom z-index*/
+/*z-index: y3aly layer fo2 other layers kol ma yzeed value*/
+
+/*absolute ykhaly yfked element makano fa nzabato manually lw ayzeen element on element
+
+.btn-white{
+    background-color: aliceblue;
+    color: aqua;
+    box-sizing: 0px 0px ;
+}
+
+/*display:blick,inline,none*/

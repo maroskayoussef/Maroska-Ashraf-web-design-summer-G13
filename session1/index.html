@@ -1,60 +1,95 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <!-- meta tag for language support -->
     <meta charset="UTF-8">
-
-    <!-- responsive: yaane asaghar aw akabar screen fa el website ytzabat yigi gamb baado aw taht baado kalam w pics--->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--meta tags ==> SEO = search engine optimization btaa marekting by3adel fyhom ashan ytla3 l user f el search results-->
-    <meta name="description" content="This is a simple web page for learning HTML and CSS.">
-    <meta name="keywords" content="HTML, CSS, web design">
-    <meta name="author" content="Your Name">
-
-    <!-- refresh: automatically bnhot page elhaytaamelha refresh w baad kam second-->
-    <meta http-equiv="refresh" content="30">
-
-    <!-- css files -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!--tab image-->
-    <link rel="icon" href="images/favicon.ico" >
-
-    <script> //b code aw nrbot b file tany
-        // JavaScript code can go here
-        console.log("Welcome to my web page!");
-    </script>
-    <script src="js/scripts.js"></script> <!--better to be called at the end of body-->
-    <title>Web Design session 1</title>
-    
+    <title> Assignment 2</title>
 </head>
 <body>
-    <!-- heading h1-->
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a simple web page.</p>
+    <h4><strong>Assignment 2</strong></h4>
+    <hr size="3" color="black">
+    <h4><strong>Objectives</strong></h4>
+    <ul>
+        <li>Learn the meanings of the following table:
+            <br>
+            HTML table
+         </li>
+        <li>Learn to create an HTML table using TR, TD and TH Tags.</li>
+        <li>Learn to use the COLSPAN and ROWSPAN attributes.</li>
+    </ul>
 
-    <!--hr: horizontal rule-->
-    <hr>
-    <span>Html</span>
-    <span>css</span>
+    <hr size="3" color="black">
 
-    <!--br: line break-->
-    <br>
+    <h3><strong>Creating HTML Tables</strong></h3>
 
-    <!-- inline tags p-->
-    <span>Html</span>
-    <span>CSS</span>
+    <p> This Assignment can be completed individually. Your assignment is to create an HTML table.</p>
 
-    <!-- anchor: creates clickable links-->
-    <a href="about.html">About Us</a>
-    <a href="">Index page</a>
-    <a href="https://preview.colorlib.com/theme/world/index.html" target="_blank">World template</a>
+    <table border= "6" bordercolor="grey" width="30%" bgcolor="white" cellspacing="0" cellpadding="5" border="1" align="center">
+    <thead>
+      <tr>
+        <th colspan="6" style="color: indigo;" align="center"> Jan's Spring Term 2006 Afternoon Schedule</th>
+      </tr>
+      <tr>
+        <th>    </th>
+        <th align="center">Monday</th>
+        <th align="center">Tuesday</th>
+        <th align="center">Wednesday</th>
+        <th align="center">Thursday</th>
+        <th align="center">Friday</th>
+      </tr>
+      </tr>
+    </thead>
 
+    <tbody>
+        <tr>
+            <td align="center"><strong>1:00</strong></td>
+            <td bgcolor="orange" rowspan="2" align="center" >Office</td>
+            <td></td>
+            <td bgcolor="orange" rowspan="2" align="center">Office</td>
+            <td bgcolor="orange" rowspan="8" align="center">Office <br> Hours <br> By <br>  Appt</td>
+            <td bgcolor="orange" rowspan="2" align=""center">Office</td>
 
-    <!-- image-->
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bigfootdigital.co.uk%2Fhow-to-optimise-images&psig=AOvVaw2VfztOOA44GyvBOWWYcn8t&ust=1753693318921000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLjF-O3W3I4DFQAAAAAdAAAAABAK" alt="Sample Image">
+        </tr>
 
+        <tr>
+            <td align="center"><strong>1:30</strong></td>
+            <td rowspan="2" bgcolor="lightgrey" align="center"> Dept Meeting</td>
+        </tr>
 
-    </body>
+        <tr>
+             <td align="center"><strong>2:00</strong></td>
+            <td rowspan="3" bgcolor="lightgreen" align="center"> MAT 108</td>
+            <td rowspan="3" bgcolor="lightgreen" align="center"> MAT 108</td>
+            <td rowspan="3" bgcolor="lightgreen" align="center"> MAT 108</td>
+        </tr>
+
+        <tr>
+            <td align="center"><strong>2:30</strong></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td align="center"><strong>3:00</strong></td>
+            <td rowspan = "3" bgcolor="lightgrey" align="center" > EC Meeting</td>
+           
+        </tr>
+
+        <tr>
+            <td align="center"><strong>3:30</strong></td>
+            <td rowspan="3" bgcolor="pink" align="center" >CSC 205</td>
+            <td rowspan="3" bgcolor="pink" align="center" >CSC 205</td>
+            <td rowspan="3" bgcolor="pink" align="center" >CSC 205</td>
+        </tr>
+
+        <tr> 
+            <td align="center"><strong> 4:00</strong></td>
+        </tr>
+
+        <tr>
+            <td align="center"><strong>4:30</strong></td>
+            <td></td>
+        </tr>
+    </tbody>
+</body>
 </html>
+

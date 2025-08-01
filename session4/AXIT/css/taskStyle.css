@@ -194,3 +194,8 @@ a{
     border-bottom-right-radius: 5px;
 
 }
+
+.html{
+    scroll-behavior: smooth; /*to scroll from nav bar to wanted sectipn*/
+
+}
