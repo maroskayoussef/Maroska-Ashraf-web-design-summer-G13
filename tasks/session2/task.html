@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <form>
+    <table  width="30%" bgcolor="white" cellspacing="0" cellpadding="5" border="1" align="center">
+        <thead>
+            <tr>
+              <th colspan="2" style="color:red" bgcolor="yellow" align="center">Registration Form</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td bgcolor="lightblue">Enter Name:</td>
+            <td bgcolor="lightblue"><input type="text" name="fullname" required  minlength="3" maxlength="10" title="Enter your full name (3-10 characters)"></td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightblue">Password:</td>
+            <td bgcolor="lightblue"><input type="password" name="userpassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" title="Password must be at least 8 characters long and include a mix of letters, numbers, and special characters."></td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightblue">Enter Address:</td>
+            <td bgcolor="lightblue"><input type="text" name="address"  required></td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightblue">Select Game:</td>
+            
+            <td bgcolor="lightblue"> <input type="checkbox" name="sport" value="football"> <label>football</label>
+            <br>
+            <input type="checkbox" name="sport" value="hockey"> <label>hockey</label>
+            <br>
+            <input type="checkbox" name="sport" value="badminton"> <label>badminton</label>
+            <br>
+            <input type="checkbox" name="sport" value="cricket"> <label>cricket</label>
+            <br>
+            <input type="checkbox" name="sport" value="volleyball"> <label>volleyball</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightblue">gender:</td>
+            <td bgcolor="lightblue">
+                <input type="radio" name="gender" value="male"> <label>male</label>
+                <input type="radio" name="gender" value="female"> <label>female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightblue">Select your age:</td>
+            <td bgcolor="lightblue">
+                <select name="select your age" required>
+                    <option selected disabled>Select</option>
+                    <option value="teen">teenager</option>
+                    <option value="adult">adult</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td bgcolor="lightblue">Select photo:</td>
+            <td bgcolor="lightblue"><input type="file" name="userphoto" required accept=".png"></td>
+
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center" bgcolor="lightblue"><button type="submit">click me</button>
+            <button type="submit">submit</button>
+            <button type="submit">reset form</button>
+            </td>
+
+        </tr>
+        
+    </tbody>
+
+    </table>
+    </form>
+
+</body>
+</html>
