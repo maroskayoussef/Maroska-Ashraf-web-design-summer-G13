@@ -1,0 +1,216 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* global style */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.bg-light {
+    background-color: rgb(235, 235, 235);
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.text-white {
+    color: white;
+}
+
+.padding-top-bottom {
+    padding: 3% 0%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+
+/* custom style */
+nav h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    width: 40%;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    display: block;
+}
+.dropdown a{
+    color: black;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-start (default) , flex-end , center , space-between , space-around , space-evenly */
+    justify-content: space-between;
+    /* flex-start , flex-end , center , stretch(default) */
+    align-items: center;
+    /* row (default) , row-reverse , column , column-reverse */
+    flex-direction: row;
+    /* flex-start , flex-end , center , space-between , space-around , space-evenly */
+    align-content: space-evenly;
+    background: #c8bdad;
+    row-gap: 28px;
+    /* column-gap:20px; */
+    /* height: 656px;*/
+    /* flex-flow : flex-driection + flex-wrap */
+    flex-flow: row wrap;
+
+}
+
+/* for parent ==> display:flex ==> justify-content , align-items , align-content , flex-direction , flex-wrap , row-gap , column-gap  */
+
+/* for children ==> order , align-self */
+.card {
+    width: 28%;
+    padding: 1%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 3px #cccccc;
+}
+
+.custom-card {
+    background-color: wheat;
+    border-radius: 10px;
+    width: 40%;
+    /* height: 200px; */
+}
+
+
+/* .custom-img{
+    background-image: url(../images/sofa.png);
+    background-size: 100% 100%;
+    height: 100%;
+} */
+
+
+
+/* px em rem */
+/* 16px ==> 1rem */
+.card-container {
+    width: 30%;
+    height: 10rem;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 3px #cccccc;
+
+    margin: 4% auto;
+    /* hidden , auto , scroll  */
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.card-img {
+    width: calc(100% / 3 - 2%);
+    margin: 5% 1%;
+    box-shadow: 0px 0px 5px 3px #cccccc;
+    border-radius: 18px;
+    overflow: hidden;
+    /* transition-duration: 2s; */
+    /* all (default)*/
+    /* transition-property: width; */
+
+    /* ease (deafult) , linear , ease-in , ease-out , ease-in-out */
+    /* transition-timing-function: linear;  */
+    /* transition-delay: 3s; */
+     transition: 3s all linear ;
+   
+}
+
+.card-img:hover{
+    /* width: 60%; */
+    background-color: teal;
+    color: white;
+    
+}
+.custom-filter-img{
+    transition: 1s;
+}
+.custom-filter-img:hover{
+    filter: blur(4px);
+    filter: brightness(2);
+    filter: contrast(2);
+    filter: opacity(0.3);
+    filter: grayscale(0.9);
+    /* filter ==> drop-shadow() */
+}
+
+
+
+.card-body {
+    padding: 3%;
+}
+
+.custom-icon {
+    position: absolute;
+    left: calc(50% - 22.5px);
+    top: calc(50% - 22.5px);
+    background: white;
+    width: 45px;
+    aspect-ratio: 1 / 1;
+    /* height: 45px; */
+    font-size: 20px;
+    border-radius: 50%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.custom-img {
+    /* height: 381px; */
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.custom-img-position-absolute{
+   width: 70px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    right: 18%;
+    top: 84%;
+    border: 5px solid white;
+}

@@ -1,0 +1,42 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit; /*ashan takhd parent's color*/
+}
+
+/*global style*/
+
+/*custom style*/
+
+.container{
+    background-color: gray;
+    height:300px;
+    width: 100%;
+}
+
+.card{
+    height: 100%;
+    width: 30%;
+}
+
+.nav{
+    height:20%;
+    width:100%;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+

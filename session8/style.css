@@ -1,0 +1,162 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit; /*ashan takhd parent's color*/
+}
+
+/*global style*/
+.d-flex{
+    display:flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.w-100{
+    width: 100%;
+}
+
+
+input:focus{
+    border-color: blue;
+    outline: none;/*outer border*/
+}
+
+input:disabled{  /*search how to change checkbox color*/
+    border: red;
+}
+
+input:checked{
+    width:20px;
+    heigh:20px;
+    background-color: red;
+}
+
+/*display inline block for a href to take marginsss*/
+
+a:link{ /*unvisited links*/
+    color:red;
+}
+
+a:visited{ /* visited*/
+    color:green;
+}
+
+.custom-div{
+    margin:2%;
+}
+
+.custom-div p:first-child{
+    color: red;
+}
+
+.custom-div p:nth-child(2){
+    color: chartreuse;
+    font-size: 15px;
+}
+
+tr:nth-child(1),td:nth-child(3){
+    padding:2%;
+}
+
+tr:nth-child(odd){
+
+}
+
+tr:nth-child(even){
+
+
+}
+
+tr:nth-child(even) :hover {
+    color: red;
+}
+
+h2::first-letter{
+    color: blue;
+}
+
+h2::first-line{
+    color: blueviolet;
+
+
+
+}
+
+
+h2{
+    line-height: 3;
+    text-shadow: 0px 0px 4 px blue; /*kol harf warah harf*/
+}
+
+ul::marker{
+    color: blue;
+}
+
+::selection{ /*ai selected element*/
+     background-color: gold;
+
+}
+
+
+::placeholder{
+    color: blue;
+}
+
+h1::before{
+    content: "web design"; /*or icon */
+    font-family: 'Font Awesome 7 Free'; /*for icons then copy unicode of icon */
+    content:/unicode
+}
+/*line height:spaces between linesss*/
+
+.card-transfrom{
+    transiton:1s;
+    width: auto;
+    padding: 1px;
+}
+
+.card-transfrom:hover{
+    transform: translateX(100px); /*msh byzo2 elgambu bytlaa aleh*/
+    transform: translateX(-100);/*to the left*/
+    transform: translateX(100%); /*kol el width*/
+    transform: translateY(0%);/*to get back to default position*/
+    transform: rotateX('angle');
+    transition: skew(50deg);
+    transform: scale(1.5); /*width and height*/
+    transform: scaleX(1.5);/*nkabar el width x1.5*/
+    transform: scaleX(0); /*disappear*/
+    transform: matrix(scalex, skewy, skewx,scaleY,translateX,translateY);/*skew do ot use degree /100 to decimal*/
+    transform: rotateY('angle'); translateX();/*two commands without overriding*/
+   
+}
+
+.container{
+    perspective: 1000px; /*for 3d for the PARENT*/ 
+}
+
+.flip-card{
+
+}
+
+.flip-front{
+    backface-visibility: hidden;
+}
+
+
+.flip-card:hover{
+   transform: rotateY('angle');
+}
+
+
+/*transformstyle:preserve3d ==>el haylef odamna(flip-body) different styles fornt w back
+prespective:3d==>its parent(flip-card)*/

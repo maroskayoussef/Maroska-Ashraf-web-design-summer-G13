@@ -1,0 +1,7 @@
+photopea online editor
+css-tricks for more on flex
+
+for parent==> display flex=> justify content align items, alignm contetnt, flex direction  flex wrap, row gap, column gap
+for children==> order,align-self
+
+16px==>1rem rem ahsan ashan pixel btkhtalef f screens 

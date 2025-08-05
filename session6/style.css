@@ -1,0 +1,99 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit; /*ashan takhd parent's color*/
+}
+
+/*global style*/
+
+
+
+/*custom style*/
+
+.container{
+    width:100%;
+    margin:0% auto;
+    background-color: blue;
+}
+
+.bg-light{
+    background-color: lightgray;
+    padding:3% 0%;
+}
+
+.card-body{
+    padding: 3%;
+    background-color: white;
+    width: calc(100%/3 -2%); /*el 2 margins aw minus width element ashan ngebha fl nos lw man icon gowa card*/
+    margin-left: 1%;
+    margin-right: 1%;
+    aspect-ratio: 1/1;/*for border radius mazbut big icons*/
+    transition-duration: 2s;
+    transition-property: width;/*default all gowa hover */
+    transition-timing-function: linear;
+    transition-delay: 3s;/* ashan trgaa as before lama nsheel mouse*/
+    transition: 3s all linear;
+}
+.card-img:hover{
+background-color: antiquewhite;
+
+width:80%;
+}
+
+.custom-filter-img:hover{
+    filter:blur(4px);
+    filter: grayscale(0.9);
+    filter: brightness(2);
+    filter:contrast(2);
+    filter:opacity(0.3);/*transparency*/ 
+    /*filter==>dropshadow()*/
+}
+
+
+.flex-boxnotes{ 
+    /*lazem nhaded width ll gowa flex*/
+    display:flex;
+    flex-wrap: nowrap;/*default kolhom on same line*/
+    flex-wrap: wrap; /* width yekhlas ynzl fl line eltahteeh*/
+   
+    /*for columns*/
+    justify-content: flex-start;/*left to right or right to left zay elsafha*/
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between ;/*spaces between items*/
+    justify-content: space-around; /*spaces between and around each item wl fl nos hayban akbar spaces*/
+    justify-content: space-evenly;
+   
+    align-items: stretch/*default nafs el height*/;
+    align-items: flex-start/*height ala hasab content mnfo2*/;
+    align-items: end/*content + fl akher*/;
+    align-items: center;/*contnet w fl nos*/
+    flex-direction: row-reverse; /*bnhot item mn left to right aw in reverse*/
+    flex-direction: column;
+
+    height:600px;
+    align-content: flex-start; /*zay justify cintent for rows spaces between rows we have to have a certain height*/
+    row-gap: 20px; /*no % allowed */;
+    
+}
+
+    /*law ala  card mslan :align-self*/
+    /*order -1 tgyb akher wahed flawal*/
+
+.flexbox{
+    height:500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/*overflow:hidden,auto taamel scroll*/
+/*white-space:nowrap ykhaly paragraphs in one line*/

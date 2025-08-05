@@ -1,0 +1,57 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit; /*ashan takhd parent's color*/
+}
+
+/*global style*/
+.d-flex{
+    display:flex;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.w-100{
+    width: 100%;
+}
+
+/*custom*/
+.card{
+    width:30%;
+    overflow: hidden;
+
+}
+.card-img{
+    width: 100%;
+    height:auto; 
+  
+}
+
+/*
+.card-caption{
+    width:100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.card-caption-icons{
+    background-color: blue;
+    width:60px;
+    display: flex;
+    flex-direction: column;
+}
+.card-caption-icons i{
+    font-size: 18px;
+}*/
+

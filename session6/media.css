@@ -1,0 +1,18 @@
+/*rule==>@media*/
+/*type==>print,screen,speech,*/
+/*condition==> max-width, min-width, range*/
+
+/*0:400*/
+@media (max-width:400px){
+    .d-flex{
+        flex-wrap: wrap;
+    }
+
+    .w-45, .w-60, .w-35
+    {
+        width: 100%;
+    }
+    .card-sm ,w-35{
+        width: 35%;
+    }
+}
