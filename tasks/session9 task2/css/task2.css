@@ -1,0 +1,45 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*global*/
+
+/*custom*/
+ .container{
+    width:100%;
+    height: 500px;
+
+ }
+
+ .bg-img{
+    background-image: url("../session9/images/roadpic.jfif");
+    background-size: 100% 115%;
+    overflow: hidden; /*when the element inside it moves by margin 100% it won't appear outside*/
+}
+
+.bg-img img{
+    width:200px;
+    /*search for animation:fill mode*/
+    animation: carMoving 4s infinite linear;
+
+}
+
+@keyframes carMoving{
+
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 100%;
+
+    }
+
+}
