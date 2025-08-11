@@ -1,0 +1,845 @@
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:inherit; 
+}
+
+
+/*global*/
+.top-25{
+    top:25%;
+}
+
+.left-27{
+    left: 27%;
+}
+
+.left-50{
+    left:50%;
+}
+
+.left-70{
+    left:70%;
+}
+
+.left-80{
+    left:89%;
+    top:20%;
+}
+
+.bottom-10{
+  bottom: 10% ;
+}
+.justify-end{ 
+    justify-content:flex-end; 
+}
+.justify-center{ 
+    justify-content:center; 
+}
+.align-center{
+     align-items:center;
+     }
+
+
+.bg-grey{
+   background-color: #ebeef0;
+}
+
+
+/*customized*/
+
+
+#topNav.fixed {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 1050; box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+#topNavSpacer {
+   height: 0; 
+   transition: height .2s; 
+  }
+
+
+
+#secondNav { 
+  z-index: 1020; 
+  position: relative; 
+}
+
+
+.banner-pic1{
+  background-color: #E2E3E5;
+}
+
+
+.banner-pic2{
+  background-color: #EAEEF1;
+}
+
+
+.zoom-wrap{
+  overflow: hidden; 
+}
+
+.zoom-wrap img{
+ transition: transform .5s ease; 
+}
+
+.zoom-wrap:hover img{ 
+  transform: scale(1.08);
+}
+
+  .price-sticker{
+    position:absolute; right:10px;
+    background:red; color:#fff; border-radius:50%;
+    width:54px; height:54px; display:flex; align-items:center; justify-content:center;
+    font-weight:700; 
+    font-size:16px; 
+    z-index:10;
+  }
+
+
+
+
+.category-item {
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 140px;
+  height: 140px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.5); 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 24px;
+}
+
+
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+.product-link {
+  color: inherit;            
+  text-decoration: none;    
+  transition: color 0.2s ease;
+}
+
+.product-link:hover {
+  color: red;               
+}
+
+
+.fd-pill{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    font-weight:700;
+    background:#f3f4f6;
+  }
+
+.flash-rail{
+  display:flex;
+  flex-wrap:nowrap;         
+  gap:0;                     
+  overflow-x:auto;
+  overflow-y:visible;        
+  padding: 0 4px;            
+}
+
+.fd-item { 
+  flex: 0 0 auto;
+  width: 250px;
+  border-right: 1px solid #eee;
+}
+
+.fd-card {
+  position: relative; 
+  border-radius: 0;
+  transition: box-shadow 0.2s ease;
+}
+
+.fd-actions {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.fd-actions button {
+  opacity: 0;
+  transform: translateY(-10px); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fd-card:hover {
+  z-index: 3;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.fd-card:hover .fd-actions {
+  opacity: 1;
+}
+
+.fd-card:hover .fd-actions button:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+.fd-card:hover .fd-actions button:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+.fd-card:hover .fd-actions button:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.fd-card:hover .fd-actions button:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.fd-actions button:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
+
+
+.promo{ 
+    position:relative;
+     height:350px; 
+     display:block; 
+     background-color: #686f82;
+}
+.promo2{ 
+    position:relative;
+     height:350px; 
+     display:block; 
+     background-color: #EE9EA1;
+}
+.promo-lg{
+    background-color: #f3f0e9;
+}
+
+.promo-img{
+  position:absolute;
+   inset:0; width:100%;
+    height:100%; 
+    object-fit:cover;
+  transition: transform .35s ease;
+}
+.promo-img1{
+  position:absolute;
+   inset:0; width:100%;
+    height:80%; 
+    object-fit:cover;
+  transition: transform .35s ease;
+}
+
+
+.promo-img2{
+  position:absolute;
+   inset:0; width:100%;
+    height:80%; 
+    object-fit:cover;
+  transition: transform .35s ease;
+}
+
+
+
+.promo:hover,
+.promo2:hover,
+.promo-lg:hover {
+  box-shadow: none !important;
+}
+.promo:hover .promo-img,
+.promo:hover .promo-img1,
+.promo:hover .promo-img2,
+.promo2:hover .promo-img,
+.promo2:hover .promo-img1,
+.promo2:hover .promo-img2 {
+  transform: scale(1.05); 
+}
+
+
+     
+.promo-body{
+    text-align: center;
+  position:relative;
+   z-index:1;
+    height:100%;
+   gap:.25rem;
+    padding:1.25rem 1.5rem;
+  color:#111;
+}
+.promo .promo-body{ 
+    color:#111;
+ }     
+
+
+
+
+.promo:hover .promo-img{
+     transform:scale(1.03);
+     }
+.promo:hover{
+     box-shadow:0 10px 30px rgba(0,0,0,.12);
+     }
+
+/* CTA underline */
+.shop-link{
+  display:inline-block; font-weight:600; text-decoration:underline;
+  text-underline-offset: 4px;
+}
+
+.na-card{
+  position: relative;        
+  border-radius: 12px;
+  transition: box-shadow .2s ease;
+  height: 100%;
+}
+.na-card:hover{
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  z-index: 2; /* bring above neighbors instead of pushing them */
+}
+
+.na-actions {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  z-index: 5;
+}
+
+.na-card:hover .na-actions {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+
+}
+
+.na-card:hover {
+  z-index: 10; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-bottom: none;
+
+}
+.na-actions .btn{
+  padding:.5rem .75rem;
+}
+
+.nav .nav-link {
+  color: #000 !important; 
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover{
+    text-decoration:underline;
+}
+
+.nav .nav-link.active {
+  text-decoration: underline;
+}
+
+.na-add:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
+
+.na-icon:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
+
+.na-actions .na-icon {
+  position: relative; 
+}
+
+.na-actions .tooltip-text {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+
+.na-actions .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.na-actions .na-icon:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.na-actions .btn:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+
+.hero-figure{
+  background: #eef1f4;
+  min-height: 420px;
+}
+.sale-badge{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 88px; height: 88px;
+  background: #e11931;
+  display: grid; place-items: center;
+  font-size: 1.25rem;
+}
+
+/* thumbnails */
+.thumb img{ 
+    display:block; border-radius:.5rem; 
+}
+.thumb:hover,.thumb:focus{ 
+    border-color:#000 !important; 
+}
+
+
+
+
+.blog-img-holder {
+  height: 300px; 
+}
+
+.blog-thumb{
+  perspective: 900px;            
+  transform-style: preserve-3d;
+  overflow: hidden;             
+  border-radius: .75rem;     
+}
+
+.blog-thumb img{
+  display:block;
+  backface-visibility: hidden;
+  transform: rotateX(0deg) rotateY(0deg) scale(1);
+  transform-origin: center;
+  transition: transform .45s cubic-bezier(.2,.6,.2,1);
+  will-change: transform;
+}
+
+.blog-thumb:hover img{
+  transform: rotateX(6deg) rotateY(12deg) scale(1.07);
+
+}
+
+.lfse { 
+    background-color: #eef1f4 !important;
+ }
+
+.lfse .search-wrap { 
+  height: 56px;
+ }
+.lfse .search-wrap .form-control:focus { 
+  box-shadow: none;
+}
+.lfse .search-btn {
+   width: 48px; height: 48px; border-radius: .5rem; 
+  }
+
+.lfse-tags .nav-link { 
+  color:#111;
+ }
+.lfse-tags li + li::before{
+  content: "|";
+  color: #c9ccd1;
+  margin: 0 .75rem;
+}
+.lfse-tags .nav-link:hover {
+     text-decoration: underline; 
+}
+
+.keyword {
+  display: inline-block;
+  padding: 0 8px;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.keyword:hover {
+  color: red;
+}
+
+.keyword:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: #ccc;
+}
+
+
+.footer-dark{
+  background:#1f2426;        
+}
+.footer-phone:hover{
+    color: red;
+}
+
+.footer-links a{
+  color:white; 
+
+}
+.footer-links a:hover{
+  color:red;
+}
+.footer-dark .form-control::placeholder{
+     color:#9aa0a6;
+     }
+
+.footer-dark .form-control:focus{ 
+    color: red;
+}
+.foot-card{
+     background:transparent; 
+    }
+
+    .footer-arrow:hover i {
+  color: red !important;
+}
+
+.footer-icons i:hover{
+    color: red;
+}
+.custom-border{
+  border: 1px solid #ccc;       
+  border-radius: .1rem;         
+}
+
+.f-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px; 
+}
+
+.f-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: none;
+}
+
+.f-link:hover {
+  color: red;
+}
+
+.f-link:hover::after {
+  animation: underline-wipe 2s ease-in-out;
+}
+
+@keyframes underline-wipe {
+  0% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  49% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(0);
+    transform-origin: left; 
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+
+/*for products.html*/
+.home:hover{
+  text-decoration: underline;
+
+}
+
+.shop{
+  color: gray;
+}
+.category-pill {
+  display: inline-block;
+  background-color: #EBEEF0;
+  padding: 5px 19px 5px 19px;
+  border-radius: 5px;
+  color: #000;
+  text-decoration: none;
+
+}
+.category-pill:hover {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.color-filter ul {
+   margin: 0; 
+   padding: 0; 
+   list-style: none;
+   }
+  .color-filter a{
+    color:#212529;
+  }
+
+.color-filter .name, .color-filter .count{
+  transition:color .15s ease;
+}
+
+.color-filter a:hover .name,
+.color-filter a:hover .count{ 
+  color:red; 
+} 
+
+.swatch{
+  width:14px; height:14px; border-radius:3px;
+  border:1px solid rgba(0,0,0,.15); background:var(--c,#000);
+}
+
+
+.search{
+  height:40px;
+  display: flex;
+  position: relative;
+  padding: 2px 5px 2px 5px;
+}
+
+.search input {
+  width: 100%;
+  padding: 8px 40px 8px 12px; 
+  border: 1px solid #000;   
+  border-radius: 6px;        
+  outline: none;
+}
+.search i{
+  position: absolute;
+  left:85%;
+  top:10px;
+}
+
+
+.brand-filter .brand-row{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between;
+  gap:.5rem; 
+  padding:.35rem .25rem;
+   border-radius:.375rem; 
+   cursor:pointer;
+  transition:background-color .15s ease;
+}
+.brand-filter .left{ display:flex; 
+  align-items:center;
+   gap:.5rem; }
+
+.brand-filter input[type="checkbox"]{
+  display: none;
+}
+
+.brand-filter .checkmark{
+  width:16px; 
+  height:16px; 
+  border:1px solid black; 
+  border-radius:2px;
+  background:#fff; 
+  display:inline-block; 
+  position:relative;
+  transition:background-color .15s ease, border-color .15s ease;
+}
+
+.brand-filter .checkmark::after{
+  content:"✓"; 
+  position:absolute; 
+  color:#fff; 
+  font-size:12px;
+  top:-2px; 
+  left:2px;
+   opacity:0; 
+   transition:opacity .1s ease;
+}
+
+.brand-filter .brand-row:hover .checkmark{
+  background:#000;
+   border-color:#000;
+}
+.brand-filter .brand-row:hover .checkmark::after{ 
+  opacity:1; 
+}
+.brand-filter .brand-row:hover .brand-name,
+.brand-filter .brand-row:hover .brand-count{ 
+  color:#dc3545; 
+}
+
+
+.brand-filter input[type="checkbox"]:checked + .checkmark{
+  background:#000; border-color:#000;
+}
+.brand-filter input[type="checkbox"]:checked + .checkmark::after{
+   opacity:1;
+}
+
+
+.brand-scroll::-webkit-scrollbar{
+  width: 8px;                              
+}
+.brand-scroll::-webkit-scrollbar-track{
+  background: c7ccd1;                 
+}
+.brand-scroll::-webkit-scrollbar-thumb{
+  background-color: black;             
+  border-radius: 8px;                      
+  border: 2px solid transparent;          
+  background-clip: content-box;
+
+}
+
+.sale-products {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.sale-products input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  position: relative;
+}
+
+.sale-products:hover input[type="checkbox"] {
+  background-color: #000; /* Black fill */
+}
+
+.sale-products:hover input[type="checkbox"]::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+}
+.vertical-line {
+  width: 1px;              /* thin */
+  height: 20px;            /* short */
+  background-color: #ccc;  /* light grey */
+  margin: 0 8px;           /* space left/right */
+}
+.link:active{
+  text-decoration: underline;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+/* Show dropdown on hover */
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* aligns with toggle */
+}
+
+/* Make hovered dropdown item red */
+.dropdown-menu .dropdown-item:hover {
+  color: #dc3545; /* Bootstrap danger red */
+  background-color: transparent;
+}
+
+/* Make active item red */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  color: #dc3545 !important;
+  background-color: transparent !important;
+}
+
+/* Optional: make the main toggle red on hover */
+.hover-dropdown:hover  .dropdown-toggle {
+  color: #dc3545;
+}
+
+.pagination .page-link {
+  border-radius: 4px;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: white!important; /* or your theme color */
+
+  border-color: black;
+  color: black;
+}
+
+.pagination .page-link:hover {
+  border-color: black;
+}

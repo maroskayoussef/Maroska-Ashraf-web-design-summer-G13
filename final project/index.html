@@ -1,0 +1,1381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>final project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../final project/css/style.css">
+  </head>
+  <body>
+
+    <nav  id="topNav" class="navbar bg-white py-3 shadow-sm">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Bootstrap" width="126" height="40">
+    </a>
+
+    <!-- Phone Section -->
+    <div class="d-flex align-items-start">
+      <i class="fa-solid fa-phone fa-lg me-2 mt-4" style="font-size:30px;"></i>
+      <div>
+        <div>Contact us 24/7</div>
+        <a href="tel:+9239427879" class="text-dark text-decoration-none fw-bold">(+92) 3942 7879</a>
+      </div>
+    </div>
+
+    <!-- Search + Dropdown Form -->
+    <form class="d-flex bg-light rounded-3 overflow-hidden" style="max-width: 700px;">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle px-4 py-3 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Fashion</a></li>
+          <li><a class="dropdown-item" href="#">Electronics</a></li>
+        </ul>
+      </div>
+
+      <div class="vr my-auto mx-2"></div>
+
+      <input type="text" class="form-control border-0 shadow-none bg-light" placeholder="Search for product">
+
+      <button class="btn btn-dark px-4 d-flex align-items-center justify-content-center" type="submit">
+        <i class="fas fa-search text-white"></i>
+      </button>
+    </form>
+
+    <!-- Right icons -->
+    <div class="d-flex align-items-center gap-4">
+
+      <!-- Language selector -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-globe"></i> English
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Español</a></li>
+          <li><a class="dropdown-item" href="#">Français</a></li>
+          <li><a class="dropdown-item" href="#">Português</a></li>
+        </ul>
+      </div>
+
+      <!-- Currency selector -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+          USD
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">USD</a></li>
+          <li><a class="dropdown-item" href="#">EUR</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+        <i class="fa-regular fa-user fa-lg me-1"></i>
+        Account
+      </a>
+
+      <!-- Wishlist -->
+      <a href="#" class="position-relative text-dark">
+        <i class="fa-regular fa-heart fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+      </a>
+
+      <!-- Cart -->
+      <a href="#" class="position-relative text-dark">
+        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+<div id="topNavSpacer"></div>
+
+
+<div class="border-bottom border-light-subtle"></div>
+
+<div class="bg-white py-2 border-bottom border-light-subtle">
+  <div class="container d-flex align-items-center flex-wrap justify-content-between">
+
+<div class="border-end border-2 border-light-subtle pe-3 me-3">
+  <button class="btn bg-white p-0 d-flex align-items-center shadow-none border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories">
+    <i class="fa-solid fa-bars me-2"></i>
+    <span class="fw-semibold">SHOP BY CATEGORIES</span>
+  </button>
+</div>
+
+    <nav id="secondNavWrapper" class="d-flex flex-wrap align-items-center gap-4 flex-grow-1 ms-4">
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Homepages
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+          <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Categories
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+        </ul>
+      </div>
+
+      <!-- Products Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Products
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">All Products</a></li>
+          <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+
+      <!-- Pages Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Pages
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><a class="dropdown-item" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none">About us</a>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none">Blog</a>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none d-flex align-items-center">
+        <i class="fa-solid fa-ticket me-1"></i> Best Discount
+      </a>
+
+    </nav>
+
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+        Recently viewed
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Chair</a></li>
+        <li><a class="dropdown-item" href="#">Shoes</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Offcanvas for SHOP BY CATEGORIES -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Shop by Categories</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Fashion</a></li>
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Electronics</a></li>
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Home & Furniture</a></li>
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Toys</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<section class="row overflow-hidden g-0">
+  <div class="col-8 position-relative" style="height:500px; background-color: #84A7A9;">
+    <img style="height: 100%; width: 100%; position: absolute; left:15%;" src="images/download__4_-removebg-preview.png">
+    <div class="position-absolute top-25 text-white" style="left: 5%;">
+      <h3>limited time offer*</h3>
+      <h1 class="fw-bold">from italia</h1>
+      <h1 class="fw-bold">sale 25% off </h1>
+      <h1>Armchairs</h1>
+      <button class="p-3 border-0 bg-white rounded-3 text-black fw-bold">SHOP NOW</button>
+    </div>
+  </div>
+
+  <div class="col-4" style="height:500px;">
+
+    <div class="h-50 banner-pic1 position-relative zoom-wrap">
+      <img src="images/download__5_-removebg-preview.png"
+           style="height:100%; width:60%; object-fit:cover; position:absolute; left:50%; bottom:40%;">
+      <div class="position-absolute bottom-10 text-black" style="left: 3%; top:9%;">
+        <h3 class="fs-6">Black Friday</h3>
+        <h1 class="fw-bold">Big Sale</h1>
+        <h1 class="fw-bold">Eyeshadow </h1>
+        <h5>over 100+ items</h5>
+        <button class="p-2 border-1 rounded-3 bg-transparent text-black fw-bold">SHOP NOW</button>
+      </div>
+    </div>
+            <div id="firstNavTrigger"></div>
+
+
+    <div class="h-50 banner-pic2 p-3 position-relative zoom-wrap position-relative">
+      <span class="price-sticker ">$29</span>
+      <img src="images/eb7bf3202b77fecd3aa558a3a5a79d03-removebg-preview.png"
+           style="height:100%; width:30%; object-fit:cover; position: absolute; right:3%; ">
+      <div class="position-absolute bottom-10 text-black">
+        <h3 class="fs-6">Black Friday</h3>
+        <h1 class="fw-bold">Big Sale</h1>
+        <h1 class="fw-bold">Eyeshadow </h1>
+        <h5>over 100+ items</h5>
+
+        <button class="p-2 border-1 rounded-3 bg-transparent text-black fw-bold">SHOP NOW</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Services Section -->
+<section class="bg-white position-relative  fs-5">
+  <div class="container d-flex justify-content-between text-center flex-wrap">
+    <div class="p-3 d-flex mt-4 border-end">
+      <i class="fa-solid fa-truck-fast fa-2x mt-2 me-3 text-secondary "></i>
+      <div class="me-5">
+      <h6 class="fw-bold mb-0">Fast, Free Shipping</h6>
+      <small class="text-muted">On order over $50</small>
+      </div>
+    </div>
+    <div class="p-3  border-end d-flex mt-4 position-absolute left-27">
+      <i class="fa-regular fa-clock fa-2x text-secondary mt-2 me-3 "></i>
+      <div class="me-5">
+      <h6 class="fw-bold mb-0 ">Next Day Delivery</h6>
+      <small class="text-muted ">Free– spend over $99</small>
+      </div>
+    </div>
+    <div class="p-3 d-flex mt-4 position-absolute left-50">
+      <i class="fa-solid fa-percent fa-2x mb-2 text-secondary mt-2 me-3 " ></i>
+      <div>
+      <h6 class="fw-bold mb-0">Low Price Guarantee</h6>
+      <small class="text-muted">We offer competitive prices</small>
+      </div>
+    </div>
+    <div class="p-3 border-start d-flex mt-4">
+      <i class="fa-regular fa-thumbs-up fa-2x mb-2 text-secondary mt-2 me-3 ms-2"></i>
+      <div>
+      <h6 class="fw-bold mb-0">Quality Guarantee</h6>
+      <small class="text-muted">We Guarantee Our Products</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Categories  -->
+<section class="py-5 bg-white">
+  <div class="container d-flex justify-content-between text-center flex-wrap gap-4">
+
+    <div class="category-item ">
+      <div class="image-wrapper ">
+        <img src="images/autopart-4-300x300.jpg" class="rounded-circle bg-light p-3 " >
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class=" fw-semibold">Autopart</p>
+    </div>
+
+      <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/electronic-1-300x300.jpg" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Laptop & Computer</p>
+    </div>
+
+    <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/electronic-19-300x300.jpg" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Fashion</p>
+    </div>
+
+    <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/electronic-18-300x300.jpg" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Headphones</p>
+    </div>
+
+    <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/download (1).jfif" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Handbags</p>
+    </div>
+
+    <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/electronic-10-300x300.jpg" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Smartphone</p>
+    </div>
+
+    <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/furniture-20-300x300.jpg" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Home & Decor</p>
+    </div>
+
+    <div class="category-item">
+      <div class="image-wrapper">
+        <img src="images/cosmetics-33-300x300.jpg" class="rounded-circle bg-light p-3" width="100" height="100">
+        <div class="overlay">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <p class="mt-2 fw-semibold">Makeup</p>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- Coupon Banner -->
+<section class="bg-white py-3">
+  <div class="container text-center border p-3 border-black">
+    <span class="fw-semibold">Super discount for your <span class="text-black fw-bold">first purchase</span></span>
+    <span class="text-danger fw-bold ms-2 text-decoration-underline">COUPON25</span>
+    <small class="text-black">Use discount code in the checkout!</small>
+  </div>
+</section>
+
+
+<!-- Flash Deals -->
+<section class="py-5 bg-white">
+  <div class="container ">
+
+    <div class="d-flex align-items-center justify-content-between mb-4 position-relative ">
+      <h3 class="mb-0 fw-bold">Flash Deals</h3>
+
+      <div class="d-none d-md-flex align-items-center gap-2 position-absolute left-70 ">
+        <span class="text-muted me-1">Ends in</span>
+        <span class="fd-pill bg-black text-white">07</span>
+        <span >:</span>
+        <span class="fd-pill bg-black text-white">57</span>
+        <span >:</span>
+        <span class="fd-pill bg-black text-white me-3">52</span>
+      </div>
+      <div class="vr position-absolute left-80 " style="height: 20px; width:0.5px;"></div>
+
+      <a href="#" class="link-dark fw-semibold text-decoration-underline">See All Products</a>
+    </div>
+
+
+    <!-- Products -->
+  <div class="d-flex flex-nowrap overflow-auto g-0 flash-rail">
+  
+  <article class="card fd-card border-1 rounded-0" style="width: 250px; flex: 0 0 auto;">
+    <div class="position-relative">
+      <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-35%</span>
+      <img src="images/electronic-30-6-700x700.jpg" class="card-img-top p-3" alt="Laptop">
+
+      <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+        <button class="btn border p-2 bg-grey"><i class="fa-regular fa-heart"></i></button>
+        <button class="btn border p-2 bg-grey"><i class="fa-solid fa-shuffle"></i></button>
+        <button class="btn border p-2 bg-grey"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="btn border p-2 bg-grey"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
+
+    <div class="card-body">
+       <h6 class="card-title mb-2 text-truncate-2">
+      <a href="#" class="product-link">Laptop Asus Vivobook i5 1355U, 8GB, 512GB SSD</a>
+    </h6>
+      <div class="d-flex align-items-baseline gap-2">
+        <span class="fw-bold">$999</span>
+        <span class="text-muted text-decoration-line-through small">$1,536</span>
+      </div>
+      <div class="small mb-2 text-warning">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-6%</span>
+    <img src="images/electronic-14-2-700x700 (1).jpg" class="card-img-top p-3" alt="Watch">
+
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-title mb-2 text-truncate-2">
+      <a href="#" class="product-link">Apple Watch Series 9 GPS 45mm</a>
+    </h6>
+
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$890</span>
+      <span class="text-muted text-decoration-line-through small">$950</span>
+    </div>
+    <div class="small mb-2 text-warning">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</article>
+
+<article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-8%</span>
+    <img src="images/automotive-11-500x500.jpg" class="card-img-top p-3" alt="Trolley">
+
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+
+     <h6 class="card-title mb-2 text-truncate-2">
+      <a href="#" class="product-link">TOOLS 34 Low Profile Hydraulic Trolley</a>
+    </h6>
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$767</span>
+      <span class="text-muted text-decoration-line-through small">$837</span>
+    </div>
+    <div class="small mb-2 text-warning">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</article>
+
+<article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-33%</span>
+    <img src="images/furniture-6-700x700.jpg" class="card-img-top p-3" alt="Clock">
+
+    <!-- Hover actions -->
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+<h6 class="card-title mb-2 text-truncate-2">
+  <a href="#" class="product-link">14-inch Fashion Simplicity Wall Clock</a>
+</h6>
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$50</span>
+      <span class="text-muted text-decoration-line-through small">$75</span>
+    </div>
+    <div class="small mb-2 text-warning">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</article>
+
+
+<article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-17%</span>
+    <img src="images/cosmetics-33-700x700.jpg" class="card-img-top p-3" alt="Clock">
+
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-title mb-2 text-truncate-2">
+    <a href="#" class="product-link">Translucent compact face powder - 03 Medium, 0.22 oz </a>
+    </h6>
+
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$9</span>
+      <span class="text-muted text-decoration-line-through small">$14</span>
+    </div>
+    <div class="small mb-2 text-warning">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</article>
+
+
+</div>
+</section>
+
+<!-- Promo Row -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-3 g-md-4 align-items-stretch">
+
+      <div class="col-12 col-lg-3">
+        <a href="#" class="promo card border-0 overflow-hidden rounded-2 text-white">
+          <img src="images/download__3_-removebg-preview.png " class="promo-img1 "  alt="Tires sale">
+          <div class="promo-body ">
+            
+            <h4 class="mb-0 lh-1 fw-bold position-absolute text-white " style="top:78%; left:20%;"> SALE 10% OFF</h4>
+            <h4 class="mb-0 lh-1 fw-bold position-absolute fs-2  text-white"  style="top:85%; left:15%;"> Tires Michelin</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <a href="#" class="promo promo-lg card border-0 overflow-hidden rounded-2">
+          <img src="images/download__2_-removebg-preview.png" class="promo-img width-100" alt="Sofa">
+          <div class="promo-body ">
+            <span class="text-uppercase text-warning fw-semibold small mb-2">New Collection</span>
+            <h2 class="fw-bold mb-2">Sofa Crafted in UK</h2>
+            <span class="shop-link">Shop now →</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <a href="#" class="promo2 card border-0 overflow-hidden rounded-2">
+          <img src="images/cosmetics-34-300x300-removebg-preview.png" class="promo-img2" alt="Beauty">
+          <div class="promo-body justify-center align-center text-center">
+            <div class="fs-4 fw-semibold text-white position-absolute" style="top:70%; left:20%;">Steals under $25</div>
+            <div class="fs-3 fst-italic text-white opacity-75 position-absolute"  style="top:80%; left:35%;">Beauty</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- New arrivals -->
+<section class="py-5 bg-white">
+  <div class="container">
+
+    <div class="d-flex align-items-center justify-content-between mb-3">
+  <h3 class="fw-bold mb-0">New arrivals</h3>
+
+  <div class="d-flex align-items-center">
+    <ul class="nav gap-3 mb-0 border-end pe-3">
+      <li class="nav-item">
+        <a class="nav-link px-0 fw-semibold text-dark active" href="#">Fashion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-0 text-muted" href="#">Phone & Tablet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-0 text-muted" href="#">Home & Decor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-0 text-muted" href="#">Beauty & Health</a>
+      </li>
+    </ul>
+
+    <a href="#" class="ms-3 text-decoration-none fw-semibold text-dark see-products">
+      See All Products
+    </a>
+  </div>
+</div>
+
+    
+    <!-- Products grid -->
+    <div class="row g-0 ">
+
+      <div class="col-12 col-lg-4 ">
+        <article class="na-card card  h-100 border border-1 rounded-0">
+          <div class="card-body d-flex gap-3 position-relative">
+            <img src="images/fashion-5-700x700.jpg" class="flex-shrink-0" width="120" alt="">
+            <div>
+              <span class="badge rounded-1 text-bg-danger mb-2 position-absolute top-0 start-0 m-2">HOT</span>
+              <h6 class="mb-2">Nike Air Max Unisex SYSTM Men Sneaker Shoes</h6>
+              <div class="fw-bold mb-2">$148</div>
+              <div class="text-warning small">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+           <div class="na-actions px-3 pb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-light w-100 d-flex align-items-center justify-content-center na-add">
+      <span class="me-2">+ ADD TO CART</span>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon"  data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+      <i class="fa-solid fa-shuffle"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick view">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <article class="na-card card h-100 position-relative border-1 rounded-0">
+          <div class="card-body d-flex gap-3">
+            <img src="images/fashion-9-700x700.jpg" class="flex-shrink-0" width="120" alt="">
+            <div>
+              <h6 class="mb-2"><span >100% UV Protected</span> Sunglasses For Men</h6>
+              <div class="fw-bold mb-2">$123</div>
+              <div class="text-warning small">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="na-actions px-3 pb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-light w-100 d-flex align-items-center justify-content-center na-add">
+      <span class="me-2">+ ADD TO CART</span>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon"  data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+      <i class="fa-solid fa-shuffle"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick view">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+</div>
+
+        </article>
+      </div>
+
+      <!-- product -->
+      <div class="col-12 col-lg-4">
+        <article class="na-card card  h-100 border-1 rounded-0">
+          <div class="card-body d-flex gap-3">
+            <img src="images/fashion-6-700x700.jpg" class="flex-shrink-0" width="120" alt="">
+            <div>
+              <h6 class="mb-2">LV Women Leather Accent Denim Mini Skirt</h6>
+              <div class="fw-bold mb-2">$1,390</div>
+              <div class="text-warning small">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+           <div class="na-actions px-3 pb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-light w-100 d-flex align-items-center justify-content-center na-add">
+      <span class="me-2">+ ADD TO CART</span>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon"  data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+      <i class="fa-solid fa-shuffle"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick view">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <article class="na-card card border-1 rounded-0 h-100">
+          <div class="card-body d-flex gap-3">
+            <img src="images/fashion-16-700x700.jpg" class="flex-shrink-0" width="120" alt="">
+            <div>
+              <h6 class="mb-1">A Different Christmas Knit Holiday Sweater</h6>
+              <div class="mb-2"><span class="fw-bold">$50–$65</span></div>
+              <div class="text-warning small">
+                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+           <div class="na-actions px-3 pb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-light w-100 d-flex align-items-center justify-content-center na-add">
+      <span class="me-2">+ ADD TO CART</span>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon"  data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+      <i class="fa-solid fa-shuffle"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick view">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+        </article>
+      </div>
+
+      <!-- row 2, product  -->
+      <div class="col-12 col-lg-4">
+        <article class="na-card card border-1 rounded-0 h-100 position-relative">
+          <div class="card-body d-flex gap-3">
+            <img src="images/fashion-1-700x700.jpg" class="flex-shrink-0" width="120" alt="">
+            <div>
+              <h6 class="mb-2">Winter New Jacket Loose Retro American Campus</h6>
+              <div class="fw-bold mb-2">$160</div>
+              <div class="text-warning small">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="na-actions px-3 pb-3">
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn btn-light w-100 d-flex align-items-center justify-content-center">
+                <span class="me-2">+ ADD TO CART</span>
+              </button>
+              <button class="btn btn-outline-secondary"><i class="fa-solid fa-shuffle"></i></button>
+              <button class="btn btn-outline-secondary"><i class="fa-regular fa-heart"></i></button>
+              <button class="btn btn-outline-secondary"><i class="fa-regular fa-eye"></i></button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- row 2, product -->
+      <div class="col-12 col-lg-4">
+        <article class="na-card card border-1 rounded-0 h-100">
+          <div class="card-body d-flex gap-3">
+            <img src="images/fashion-3-700x700.jpg" class="flex-shrink-0" width="120" alt="">
+            <div>
+              <h6 class="mb-2">Winter Hats with Top Ball Custom Design</h6>
+              <div class="fw-bold mb-2">$17</div>
+              <div class="text-warning small">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+           <div class="na-actions px-3 pb-3">
+  <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-light w-100 d-flex align-items-center justify-content-center na-add">
+      <span class="me-2">+ ADD TO CART</span>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon"  data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+      <i class="fa-solid fa-shuffle"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick view">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <button class="btn btn-outline-secondary na-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Hero -->
+<section class="py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <!-- Left: product image + badge -->
+      <div class="col-12 col-lg-7">
+        <div class="position-relative hero-figure rounded-4">
+          <img src="images/hoodie-main.png" class="img-fluid d-block mx-auto" alt="Hoodie">
+          <span class="sale-badge rounded-circle text-white fw-bold">-30%</span>
+        </div>
+      </div>
+
+      <!-- Right: details card -->
+      <div class="col-12 col-lg-5">
+        <div class="card border-0 shadow-lg rounded-4 p-4">
+          <h3 class="fw-bold mb-3">Athletics Embroidered<br>Relaxed Hoodie</h3>
+
+          <ul class="list-unstyled small mb-4">
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>64% cotton, 36% polyester</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Do not dry clean</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Machine wash</li>
+          </ul>
+
+          <hr class="my-3">
+
+          <div class="d-flex align-items-end gap-2 mb-4">
+            <div class="display-6 fw-bold mb-0">$89</div>
+            <div class="text-muted text-decoration-line-through">$120</div>
+          </div>
+
+          <!-- thumbnails -->
+          <div class="d-flex gap-2 mb-4">
+            <button class="thumb btn p-1 border rounded-3">
+              <img src="images/hoodie-1.png" width="48" height="48" alt="thumb 1">
+            </button>
+            <button class="thumb btn p-1 border rounded-3">
+              <img src="images/hoodie-2.png" width="48" height="48" alt="thumb 2">
+            </button>
+            <button class="thumb btn p-1 border rounded-3">
+              <img src="images/hoodie-3.png" width="48" height="48" alt="thumb 3">
+            </button>
+            <button class="thumb btn p-1 border rounded-3">
+              <img src="images/hoodie-4.png" width="48" height="48" alt="thumb 4">
+            </button>
+          </div>
+
+          <button class="btn btn-dark btn-lg w-100 fw-semibold rounded-3">BUY NOW</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!--best selling-->
+<section class="py-5 bg-white">
+  <div class="container ">
+
+    <div class="d-flex align-items-center justify-content-between mb-4 position-relative ">
+      <h3 class="mb-0 fw-bold">Best Selling</h3>
+
+      <a href="#" class="link-dark fw-semibold text-decoration-underline me-5">See All Products</a>
+    </div>
+
+    <!-- Products -->
+
+  <div class="d-flex flex-nowrap overflow-auto g-0 flash-rail">
+  
+  <article class="card fd-card border-1 rounded-0" style="width: 250px; flex: 0 0 auto;">
+    <div class="position-relative">
+      <span class="badge text-bg-warning position-absolute top-0 start-0 ms-2 mt-2 rounded-1">Hot</span>
+      <img src="images/fashion-5-700x700 (1).jpg" class="card-img-top p-3" alt="Laptop">
+
+      <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+
+    <div class="card-body">
+       <h6 class="card-title mb-2 text-truncate-2">
+      <a href="#" class="product-link">Nike air max unisex systm men sneaker shoes </a>
+    </h6>
+      <div class="d-flex align-items-baseline gap-2">
+        <span class="fw-bold">$148</span>
+      </div>
+  
+    </div>
+  </article>
+
+
+  <article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <img src="images/fashion-6-700x700 (1).jpg" class="card-img-top p-3" alt="Watch">
+
+    <!-- Hover actions -->
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-title mb-2 text-truncate-2">
+      <a href="#" class="product-link">ivy women leather accent denim minii skirt</a>
+    </h6>
+
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$1390</span>
+    </div>
+
+  </div>
+</article>
+
+
+<article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-17%</span>
+    <img src="images/automotive-13-700x700.jpg" class="card-img-top p-3" alt="Clock">
+
+    <!-- Hover actions -->
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+<h6 class="card-title mb-2 text-truncate-2">
+  <a href="#" class="product-link">14-inch Fashion Simplicity Wall Clock</a>
+</h6>
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$50</span>
+      <span class="text-muted text-decoration-line-through small">$75</span>
+    </div>
+
+  </div>
+</article>
+
+<article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-8%</span>
+    <img src="images/automotive-11-500x500.jpg" class="card-img-top p-3" alt="Trolley">
+
+    <!-- Hover actions -->
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+
+     <h6 class="card-title mb-2 text-truncate-2">
+      <a href="#" class="product-link">TOOLS 34 Low Profile Hydraulic Trolley</a>
+    </h6>
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$767</span>
+      <span class="text-muted text-decoration-line-through small">$837</span>
+    </div>
+
+  </div>
+</article>
+
+
+
+<article class="card fd-card border-1 border-start-0 rounded-0" style="width: 250px; flex: 0 0 auto;">
+  <div class="position-relative">
+    <span class="badge text-bg-danger position-absolute top-0 start-0 ms-2 mt-2">-17%</span>
+    <img src="images/cosmetics-33-700x700.jpg" class="card-img-top p-3" alt="Clock">
+
+    <!-- Hover actions -->
+    <div class="fd-actions position-absolute top-50 end-0 translate-middle-y me-2 d-none d-md-flex flex-column gap-1">
+      <button class="btn border p-2 bg-grey" title="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Compare">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Quick view">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button class="btn border p-2 bg-grey" title="Add to cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-title mb-2 text-truncate-2">
+    <a href="#" class="product-link">Translucent compact face powder - 03 Medium, 0.22 oz </a>
+    </h6>
+
+    <div class="d-flex align-items-baseline gap-2">
+      <span class="fw-bold">$9</span>
+      <span class="text-muted text-decoration-line-through small">$14</span>
+    </div>
+
+  </div>
+</article>
+
+
+</div>
+</section>
+
+
+<!--blog-->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h3 class="fw-bold mb-4">From Our Blog</h3>
+
+    <div class="row g-4 ">
+      <div class="col-12 col-lg-4">
+        <article class= "blog-thumb blog-card card border-0 h-100">
+          <a class="ratio ratio-16x9 rounded-2 overflow-hidden d-block blog-img-holder" href="#">
+            <img src="images/blog-1.jpg" class="w-100 h-100 object-fit-cover" alt="">
+          </a>
+
+          <div class="card-body px-0">
+            <div class="text-uppercase small text-muted mb-2">
+              <span class="fw-semibold">Beauty & Fashion</span>
+              <span class="mx-2">—</span>
+              <span>By Myoui Mina</span>
+            </div>
+
+            <h5 class="mb-2">
+              <a href="#" class="text-dark text-decoration-none blog-link">Weekday Outfit Inspiration for All Occasions</a>
+            </h5>
+
+            <p class="text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+
+            <a href="#" class="btn btn-sm btn-outline-dark rounded-2 px-3 fw-bold">READ MORE</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Post -->
+      <div class="col-12 col-lg-4">
+        <article class="blog-thumb blog-card card border-0 h-100">
+          <a class="ratio ratio-16x9 rounded-2 overflow-hidden d-block blog-img-holder" href="#">
+            <img src="images/blog-2.jpg" class="w-100 h-100 object-fit-cover" alt="">
+          </a>
+
+          <div class="card-body px-0">
+            <div class="text-uppercase small text-muted mb-2">
+              <span class="fw-semibold">Cosmetics</span>
+              <span class="mx-2">—</span>
+              <span>By Myoui Mina</span>
+            </div>
+
+            <h5 class="mb-2">
+              <a href="#" class="text-dark text-decoration-none blog-link">100% Pure & Natural Sage Essential Oil</a>
+            </h5>
+
+            <p class="text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+
+            <a href="#" class="btn btn-sm btn-outline-dark rounded-2 px-3 text-black fw-bold">READ MORE</a>
+          </div>
+        </article>
+      </div>
+
+      
+
+      <!-- Post -->
+      <div class="col-12 col-lg-4">
+        <article class="blog-thumb blog-card card border-0 h-100">
+          <a class="ratio ratio-16x9 rounded-2 overflow-hidden d-block blog-img-holder" href="#">
+            <img src="images/blog-3.jpg" class="w-100 h-100 object-fit-cover" alt="">
+          </a>
+
+          <div class="card-body px-0">
+            <div class="text-uppercase small text-muted mb-2">
+              <span class="fw-semibold">Electronics</span>
+              <span class="mx-2">—</span>
+              <span>By Myoui Mina</span>
+            </div>
+
+            <h5 class="mb-2">
+              <a href="#" class="text-dark text-decoration-none blog-link">Tips for Cleaning Desktop & Laptop</a>
+            </h5>
+
+            <p class="text-muted mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta et nisi at sodales.</p>
+
+            <a href="#" class="btn btn-sm btn-outline-dark rounded-2 px-3 text-black fw-bold">READ MORE</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="lfse py-5 bg-light">
+  <div class="container text-center">
+
+    <h3 class="fw-bold mb-4">Looking for something else?</h3>
+
+<div class="d-flex justify-content-center mb-4">
+  <div class="search-wrap position-relative shadow-sm bg-white rounded-2" 
+       style="max-width:720px; width:100%; height:56px;">
+    <input type="text" 
+           class="form-control border-0 bg-transparent h-100 ps-3 pe-5"
+           placeholder="Search for products…" aria-label="Search">
+    <button class="btn btn-dark position-absolute top-50 translate-middle-y rounded-2"
+            style="height:50px; width:50px; right:8px;" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+
+
+<div class="text-center">
+  <div class="mb-2">
+    <a href="#" class="keyword">smartphone</a>
+    <a href="#" class="keyword">tablet</a>
+    <a href="#" class="keyword">controller</a>
+    <a href="#" class="keyword">furniture</a>
+    <a href="#" class="keyword">laptop</a>
+    <a href="#" class="keyword">playstation</a>
+  </div>
+
+  <div>
+    <a href="#" class="keyword">womens fashion</a>
+    <a href="#" class="keyword">home &amp; decor</a>
+    <a href="#" class="keyword">camera</a>
+  </div>
+</div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer-dark py-5 text-light">
+  <div class="container">
+
+    <div class="row g-4 mb-5 align-items-start">
+      <div class="col-2">
+         <div class="mb-4">
+    <img src="images/logo (1).png" 
+         alt="Merto Logo" 
+         style="width:130px; height:auto;">
+  </div>
+        <ul class="list-unstyled small text-secondary mb-4">
+          <li class="mb-2 "><i class="fa-solid fa-location-dot me-2"></i>29 SE 2nd Ave, Miami<br><div class="ms-3"> florida 33131, United States </div> </li>
+          <li class="mb-2"><i class="fa-regular fa-envelope me-2"></i>info@example.com</li>
+        </ul>
+        <a  href="#" class="h6 fw-bold footer-phone">(+92) 3942 7879</a>
+      </div>
+
+      <div class="col-2">
+        <h6 class="text-uppercase text-white fw-semibold mb-4">Shopping</h6>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#">Wishlist</a></li>
+          <li class="mb-2"><a href="#">Shop by Brand</a></li>
+          <li class="mb-2"><a href="#">Offers</a></li>
+          <li class="mb-2"><a href="#">Track order</a></li>
+          <li class="mb-2"><a href="#">Size Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h6 class="text-uppercase text-white fw-semibold mb-4">Information</h6>
+        <ul class="list-unstyled footer-links ">
+          <li class="mb-2"><a href="#">Track Order</a></li>
+          <li class="mb-2"><a href="#" >Shipping </a></li>
+          <li class="mb-2"><a href="#">About us</a></li>
+          <li class="mb-2"><a href="#">Help</a></li>
+          <li class="mb-2"><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h6 class="text-uppercase text-white fw-semibold mb-4">Account</h6>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#">cart</a></li>
+          <li class="mb-2"><a href="#" >my account </a></li>
+          <li class="mb-2"><a href="#"> orders</a></li>
+          <li class="mb-2"><a href="#">wishlist</a></li>
+          <li class="mb-2"><a href="#">Affiliate programs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4">
+        <h6 class="text-uppercase text-white fw-bold mb-3">Let’s keep in touch</h6>
+
+        <div class="position-relative mb-3" style="max-width:420px">
+          <input type="email" class="form-control bg-transparent text-light border-secondary rounded-2 p-3"
+                 placeholder="enter your email address">
+          <button class="btn  border-0 position-absolute top-50 end-0 translate-middle-y me-1 footer-arrow">
+            <i class="fa-solid fa-arrow-right-long text-white"></i>
+          </button>
+        </div>
+
+        <div class="d-flex gap-3 fs-5 footer-icons">
+          <a class="text-white" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a class="text-white" href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="text-white" href="#"><i class="fa-solid fa-x"></i></a>
+          <a class="text-white" href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row p-3 rounded-3  custom-border ">
+      <div class="col-4 ">
+        <div class="foot-card d-flex align-items-center gap-3 p-3 ms-4 ">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <div class="fw-semibold">Didn’t find what you were looking for?</div>
+            <a href="#" class= "f-link link-light">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="foot-card d-flex align-items-center gap-3 p-3 ms-3 ">
+          <i class="fa-regular fa-face-smile fs-3"></i>
+          <div>
+            <div class="fw-semibold">How can we help you today?</div>
+            <a href="#" class="f-link link-light">Help Center</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="foot-card d-flex align-items-center gap-3 p-3 ">
+          <i class="fa-solid fa-comments"></i>
+          <div>
+            <div class="fw-semibold">We’d love to hear what you think!</div>
+            <a href="#" class="f-link link-light ">Give Feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between pt-3 ">
+      <div class="small text-secondary">Copyright © Merto. All Rights Reserved</div>
+      <div class="d-flex gap-2 mt-3 mt-lg-0">
+        <img src="images/payment-icons-1.png" height="30" alt="PayPal">
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+
+  </body>
+
+</html>
