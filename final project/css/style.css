@@ -778,7 +778,7 @@ a{
 }
 
 .sale-products:hover input[type="checkbox"] {
-  background-color: #000; /* Black fill */
+  background-color: #000; 
 }
 
 .sale-products:hover input[type="checkbox"]::after {
@@ -790,10 +790,10 @@ a{
   top: -1px;
 }
 .vertical-line {
-  width: 1px;              /* thin */
-  height: 20px;            /* short */
-  background-color: #ccc;  /* light grey */
-  margin: 0 8px;           /* space left/right */
+  width: 1px;              
+  height: 20px;            
+  background-color: #ccc;  
+  margin: 0 8px;          
 }
 .link:active{
   text-decoration: underline;
@@ -803,26 +803,22 @@ a{
   text-decoration: underline;
 }
 
-/* Show dropdown on hover */
 .hover-dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 0; /* aligns with toggle */
+  margin-top: 0; 
 }
 
-/* Make hovered dropdown item red */
 .dropdown-menu .dropdown-item:hover {
-  color: #dc3545; /* Bootstrap danger red */
+  color: #dc3545; 
   background-color: transparent;
 }
 
-/* Make active item red */
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
   color: #dc3545 !important;
   background-color: transparent !important;
 }
 
-/* Optional: make the main toggle red on hover */
 .hover-dropdown:hover  .dropdown-toggle {
   color: #dc3545;
 }
@@ -834,7 +830,7 @@ a{
 }
 
 .pagination .page-item.active .page-link {
-    background-color: white!important; /* or your theme color */
+  background-color: white!important; 
 
   border-color: black;
   color: black;
@@ -843,3 +839,212 @@ a{
 .pagination .page-link:hover {
   border-color: black;
 }
+
+ .product-thumb {
+    border: 2px solid #d3d3d3;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+
+  .product-thumb:hover {
+    border-color: black;
+  }
+
+  .active-product-thumb {
+    border-color: black;
+  }
+
+  .hot-badge {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: #F05025;
+  color: white;
+  font-size: 14px;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.qty-wrap .form-control {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.col-lg-5 a {
+  transition: color 0.2s ease;
+}
+
+.col-lg-5 a:hover {
+  color: red !important;
+}
+
+.qty-wrap .btn {
+  border: none !important;
+  background-color: #e0e0e0 !important;
+  color: black !important;
+}
+
+.qty-wrap .btn:hover {
+  background-color: #d5d5d5 !important;
+}
+
+.qty-wrap .qty-input {
+  border: none !important;
+  background-color: #e0e0e0 !important;
+  box-shadow: none !important; 
+  color: black !important;
+}
+
+.btn.btn-dark:hover,
+.btn.btn-danger:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.view-more-btn {
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: transparent !important;
+  color: black !important;
+  border: 2px solid black !important;
+}
+
+.tc-link {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.tc-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: none;
+}
+
+.tc-link:hover {
+  color: black; /* stays black on hover */
+}
+
+.tc-link:hover::after {
+  animation: underline-wipe-black 2s ease-in-out;
+}
+
+@keyframes underline-wipe-black {
+  0% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  49% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  50% {
+    transform: scaleX(0);
+    transform-origin: left; 
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+.view-more-btn {
+left:35%;  
+}
+
+.payments-img {
+  position: absolute;
+  left: 55%; /* Shift image further right */
+  top: 20px;
+  width:500px;
+}
+/* panels hidden by default */
+.pd-tab-panel { display: none; }
+.pd-tab-panel.show { display: block; }
+
+/* Description panel side‑by‑side layout */
+#pd-tab-desc.show{
+  display: flex;              /* make it a flex row */
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: nowrap;          /* don’t wrap unless screen is tiny */
+}
+
+/* left column (the paragraph) */
+#pd-tab-desc.show > p{
+  flex: 1 1 40ch;             /* grows, minimum comfortable width */
+  margin: 0;                  /* kill default <p> margin */
+}
+
+/* right column (the table box) */
+#pd-tab-desc .pd-spec{
+  flex: 0 1 600px;            /* allow it up to ~600px but shrink if needed */
+  max-width: 100%;            /* never overflow */
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+/* table reset so Bootstrap doesn't add gaps */
+.pd-spec .table > :not(caption) > * > *{
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+}
+
+/* zebra rows */
+.pd-spec .spec-row.alt th,
+.pd-spec .spec-row.alt td{
+  background: #f1f3f5;
+}
+
+/* the tab link styles you already had */
+.pd-tab-link{
+  color:#6c757d;
+  text-decoration:none;
+  padding-bottom:6px;
+  border-bottom:2px solid transparent;
+  transition:color .2s, border-color .2s;
+}
+.pd-tab-link:hover,
+.pd-tab-link.active{
+  color:#000;
+  border-bottom-color:#000;
+}
+/* Zebra striping for specs table */
+#pd-tab-specs .alt-row th,
+#pd-tab-specs .alt-row td {
+  background-color: #f1f3f5 !important;
+}
+
+/* Stars */
+.star { font-size: 1rem; line-height: 1; }
+.star.on  { color: #000; }
+.star.off { color: #d9dde1; }
+
+/* Thin rating bars */
+.rating-bar {
+  height: 6px;
+  background: #edf0f2;         /* light track */
+  border-radius: 999px;
+  overflow: hidden;
+}
+.rating-bar-fill {
+  height: 100%;
+  background: #111;            /* black fill */
+  border-radius: 999px;
+}
+
+/* Spacing for review items */
+.review-item + .review-item { border-top: 1px solid #eee; }

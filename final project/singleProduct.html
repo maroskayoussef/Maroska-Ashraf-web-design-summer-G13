@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>final project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../final project/css/style.css">
+  </head>
+  <body>
+    
+    <nav  id="topNav" class="navbar bg-white py-3 shadow-sm">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="Bootstrap" width="126" height="40">
+    </a>
+
+    <!-- Phone Section -->
+    <div class="d-flex align-items-start">
+      <i class="fa-solid fa-phone fa-lg me-2 mt-4" style="font-size:30px;"></i>
+      <div>
+        <div>Contact us 24/7</div>
+        <a href="tel:+9239427879" class="text-dark text-decoration-none fw-bold">(+92) 3942 7879</a>
+      </div>
+    </div>
+
+    <!-- Search + Dropdown Form -->
+    <form class="d-flex bg-light rounded-3 overflow-hidden" style="max-width: 700px;">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle px-4 py-3 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Fashion</a></li>
+          <li><a class="dropdown-item" href="#">Electronics</a></li>
+        </ul>
+      </div>
+
+      <div class="vr my-auto mx-2"></div>
+
+      <input type="text" class="form-control border-0 shadow-none bg-light" placeholder="Search for product">
+
+      <button class="btn btn-dark px-4 d-flex align-items-center justify-content-center" type="submit">
+        <i class="fas fa-search text-white"></i>
+      </button>
+    </form>
+
+    <!-- Right icons -->
+    <div class="d-flex align-items-center gap-4">
+
+      <!-- Language selector -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-globe"></i> English
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Español</a></li>
+          <li><a class="dropdown-item" href="#">Français</a></li>
+          <li><a class="dropdown-item" href="#">Português</a></li>
+        </ul>
+      </div>
+
+      <!-- Currency selector -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+          USD
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">USD</a></li>
+          <li><a class="dropdown-item" href="#">EUR</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+        <i class="fa-regular fa-user fa-lg me-1"></i>
+        Account
+      </a>
+
+      <!-- Wishlist -->
+      <a href="#" class="position-relative text-dark">
+        <i class="fa-regular fa-heart fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+      </a>
+
+      <!-- Cart -->
+      <a href="#" class="position-relative text-dark">
+        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+<div id="topNavSpacer"></div>
+
+
+<div class="border-bottom border-light-subtle"></div>
+
+<div class="bg-white py-2 border-bottom border-light-subtle">
+  <div class="container d-flex align-items-center flex-wrap justify-content-between">
+
+<div class="border-end border-2 border-light-subtle pe-3 me-3">
+  <button class="btn bg-white p-0 d-flex align-items-center shadow-none border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories">
+    <i class="fa-solid fa-bars me-2"></i>
+    <span class="fw-semibold">SHOP BY CATEGORIES</span>
+  </button>
+</div>
+
+    <nav id="secondNavWrapper" class="d-flex flex-wrap align-items-center gap-4 flex-grow-1 ms-4">
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Homepages
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+          <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Categories
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+        </ul>
+      </div>
+
+      <!-- Products Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Products
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">All Products</a></li>
+          <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+
+      <!-- Pages Dropdown -->
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Pages
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><a class="dropdown-item" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none">About us</a>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none">Blog</a>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none d-flex align-items-center">
+        <i class="fa-solid fa-ticket me-1"></i> Best Discount
+      </a>
+
+    </nav>
+
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+        Recently viewed
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Chair</a></li>
+        <li><a class="dropdown-item" href="#">Shoes</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Offcanvas for SHOP BY CATEGORIES -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Shop by Categories</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Fashion</a></li>
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Electronics</a></li>
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Home & Furniture</a></li>
+      <li class="list-group-item"><a href="#" class="text-dark text-decoration-none">Toys</a></li>
+    </ul>
+  </div>
+</div>
+ 
+
+  <nav class="d-flex align-items-center p-4 ms-5 " >
+    <a class="home me-1 fw-semibold ms-5" style="font-size: 14px; " href>Home </a>
+    <i class="fa-solid fa-angle-right" style="color: gray; font-size: 10px;"></i>
+    <a class="home me-1 fw-semibold ms-1" style="font-size: 14px; " href>Shop </a>
+    <i class="fa-solid fa-angle-right" style="color: gray; font-size: 10px;"></i>
+    <a class="home me-1 fw-semibold ms-1" style="font-size: 14px; " href>Fashion </a>
+    <i class="fa-solid fa-angle-right" style="color: gray; font-size: 10px;"></i>
+    <a class="home me-1 fw-semibold ms-1" style="font-size: 14px; " href>Men </a>
+    <i class="fa-solid fa-angle-right" style="color: gray; font-size: 10px;"></i>
+    <a class="home me-1 fw-semibold ms-1" style="font-size: 14px; " href>Accessories </a>
+    <i class="fa-solid fa-angle-right" style="color: gray; font-size: 10px;"></i>
+    <a class="shop ms-1 fw-semibold ms-1" style="font-size: 14px; " href>Nike Air Max Unisex SYSTM Men Sneaker Shoes </a>
+  </nav>
+
+<section class="container px-4">
+   <div class="row g-4">
+    <div class="col-lg-7">
+      <div class="row g-3 align-items-start">
+        <div class="col-2">
+          <img src="images/fashion-5-300x300.jpg" class="img-fluid product-thumb active-product-thumb rounded-2 mb-1" style="max-width:100px;">
+          <img src="images/fashion-20-5-300x300.jpg" class="img-fluid product-thumb rounded-2 mb-1" style="max-width:100px;">
+          <img src="images/fashion-20-4-300x300.jpg" class="img-fluid product-thumb rounded-2 mb-1" style="max-width:100px;">
+          <img src="images/fashion-20-3-300x300.jpg" class="img-fluid product-thumb rounded-2" style="max-width:100px;">
+        </div>
+
+        <div class="col-10 position-relative">
+            <span class="hot-badge">HOT</span>
+
+          <img id="mainImage" src="images/fashion-5.jpg" class="img-fluid border border-light-subtle rounded-2" style="max-width:600px; height:600px; border-width:2px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side: description -->
+    <div class="col-lg-5">
+      <a href style=" font-size: 14px; color: gray;">Nike</a>
+      <h3 class="mb-4">Nike Air Max Unisex SYSTM Men Sneaker Shoes</h3>
+      <div class="d-flex">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star me-2"></i>
+        <h6 class="text-grey me-2" style=" color: gray;">4.50</h6>
+        <h6 class="text-grey me-2 mb-4" style=" color: gray;">(4 reviews)</h6>
+        <a href style=" color: gray;" >write a review</a>
+
+        
+      </div>
+      <div>
+            <i class="fa-solid fa-check d-flex " style="color: green; font-size: 10px;"><div class="ms-1" style="color: black;"> Machine wash</div></i><br>
+            <i class="fa-solid fa-check d-flex " style="color: green; font-size: 10px;"><div class="ms-1" style="color: black;">Lace-up </div> </i><br>
+            <i class="fa-solid fa-check mb-4 d-flex" style="color: green; font-size: 10px;"><div class="ms-1" style="color: black;">14.11 Ounces</div> </i>
+        </div>
+        <h4 class="mb-4"> $148</h4>
+        <h5 class=" border rounded-1 bg-grey text-center " style="width:70px; font-size:15px; color: green; background-color: #E9F1EB;">In stock</h5>
+        <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
+  <div class="input-group input-group-sm qty-wrap" style="width:110px;">
+    <button class="btn btn-outline-secondary qty-minus" type="button">−</button>
+    <input type="text" class="form-control text-center qty-input" value="1" inputmode="numeric">
+    <button class="btn btn-outline-secondary qty-plus" type="button">+</button>
+  </div>
+
+  <button class="btn btn-dark flex-grow-1">
+    <i class="fa-solid fa-plus"></i> ADD TO CART
+  </button>
+
+  <button class="btn btn-danger" style="width:100px;">BUY NOW</button>
+</div>
+
+<div class="d-flex flex-wrap gap-4 small text-secondary mb-3">
+  <a href="#" class="text-secondary text-decoration-none">
+    <i class="fa-regular fa-heart me-2"></i>Add to wishlist
+  </a>
+  <a href="#" class="text-secondary text-decoration-none">
+    <i class="fa-solid fa-shuffle me-2"></i>Add to compare
+  </a>
+</div>
+
+<hr class="my-3">
+
+<dl class="row small mb-0">
+  <dt class="col-4 col-sm-3 text-secondary">SKU:</dt>
+  <dd class="col-8 col-sm-9">GVW6GFJCTH</dd>
+
+  <dt class="col-4 col-sm-3 text-secondary">Categories:</dt>
+  <dd class="col-8 col-sm-9">
+    <a href="#" class="text-decoration-none">Accessories</a>, 
+    <a href="#" class="text-decoration-none">Shoes</a>
+  </dd>
+
+  <dd class="col-8 col-sm-9 d-flex align-items-center gap-3 fs-5">
+    <a href="#" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#" class="text-dark"><i class="fa-brands fa-x"></i></a>
+    <a href="#" class="text-dark"><i class="fa-brands fa-pinterest"></i></a>
+    <a href="#" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+  </dd>
+</dl>
+    </div>
+  </div>
+</section>
+
+<section class="container p-3 mt-5">
+  <div class="pt-3 ps-3 pe-3 w-100 d-flex position-relative" 
+       style="background-color: #D3EFDB; height:150px;">
+
+    <div class="pt-2 ps-2">
+      <h3>Earn Cash Back For The Things<br> You Buy Every Where</h3>
+      <div class="d-flex">
+      <h6>Application via Merto.</h6>
+      <h6><a href="#" class="tc-link ms-1">Terms & Conditions</a>
+      </div>
+    </div>
+
+    <button class="view-more-btn position-absolute rounded-2 text-white p-3" 
+            style="width: 150px; background-color: #26753C; border: none;">View More</button>
+
+    <img src="images/payments-2-1.png" class="payments-img">
+  </div>
+</section>
+
+<!-- Product tabs header -->
+ <div class="container p-3">
+<div class="pd-tabs d-flex align-items-center gap-4 mb-3 ">
+  <a href="#" class="pd-tab-link active fs-1" data-target="#pd-tab-desc">Description</a>
+  <span class="text-secondary">|</span>
+  <a href="#" class="pd-tab-link fs-1" data-target="#pd-tab-specs">Specifications</a>
+  <span class="text-secondary">|</span>
+  <a href="#" class="pd-tab-link fs-1" data-target="#pd-tab-reviews">Reviews (4)</a>
+</div>
+
+<!-- Product tabs content -->
+<div class="pd-tab-panels">
+  <section id="pd-tab-desc" class="pd-tab-panel show ">
+    <p>
+      Compellingly grow performance based mindshare through parallel<br>
+       potentialities. Rapidiously underwhelm top-line catalysts for change<br>
+        before best-of-breed materials. Competently brand timely catalysts<br>
+         for change through sustainable systems. Completely expedite<br>
+          ubiquitous bandwidth after integrated action items. Progressively<br>
+           transform leading-edge supply chains whereas flexible niche markets.
+      </p>
+      <!-- Specs box -->
+<div class="pd-spec card shadow-0 mb-4  " style="max-width: 700px; border: 1px solid lightgray;">
+  <div class="table-responsive">
+    <table class="table table-borderless align-middle mb-0">
+      <tbody>
+        <tr class="spec-row">
+          <th scope="row" class="spec-key">Shipping</th>
+          <td class="spec-val">
+            We currently offer free shipping worldwide on all orders over $100.
+          </td>
+        </tr>
+        <tr class="spec-row alt">
+          <th scope="row" class="spec-key">Sizing</th>
+          <td class="spec-val">
+            Fits true to size. Do you need size advice?
+          </td>
+        </tr>
+        <tr class="spec-row">
+          <th scope="row" class="spec-key">Return &amp; exchange</th>
+          <td class="spec-val">
+            If you are not satisfied with your purchase you can return it to us
+            within 14 days for an exchange or refund.
+          </td>
+        </tr>
+        <tr class="spec-row alt">
+          <th scope="row" class="spec-key">Assistance</th>
+          <td class="spec-val">
+            Contact us on (+44) 555 88 65, or email us at support@themesky.com
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  </section>
+
+<section id="pd-tab-specs" class="pd-tab-panel ">
+  <div class="table-responsive">
+    <table class="table table-borderless mb-0">
+      <tbody>
+        <tr class="alt-row">
+          <th style="width:220px;">Fabric Type</th>
+          <td>50% Cotton, 48% Polyester, 2% Spandex</td>
+        </tr>
+        <tr>
+          <th>Care Instructions</th>
+          <td>Hand Wash Only</td>
+        </tr>
+        <tr class="alt-row">
+          <th>Returns</th>
+          <td>FREE Returns</td>
+        </tr>
+        <tr>
+          <th>Season</th>
+          <td>Spring, summer and fall</td>
+        </tr>
+        <tr class="alt-row">
+          <th>Dimensions</th>
+          <td>0.5 x 0.5 x 0.5 inches</td>
+        </tr>
+        <tr>
+          <th>Item Weight</th>
+          <td>5.6 ounces</td>
+        </tr>
+        <tr class="alt-row">
+          <th>Material</th>
+          <td>Varsity jacket made of polyester fabric, super durable and soft enough, breathable, cozy, comfortable</td>
+        </tr>
+        <tr>
+          <th>Multi-occasion</th>
+          <td>Fashion unisex letterman jackets, perfect for men, women, teens or couples</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+  <se<section id="pd-tab-reviews" class="pd-tab-panel">
+  <div class="row g-4 align-items-start">
+    <!-- Left: average + stars -->
+    <div class="col-md-4">
+      <div class="display-4 fw-bold lh-1">4.50</div>
+      <div class="mt-2 mb-1">
+        <i class="fa-solid fa-star star on"></i>
+        <i class="fa-solid fa-star star on"></i>
+        <i class="fa-solid fa-star star on"></i>
+        <i class="fa-solid fa-star star on"></i>
+        <i class="fa-solid fa-star-half-stroke star on"></i>
+      </div>
+      <div class="small text-secondary">Based on 4 reviews</div>
+    </div>
+
+    <!-- Right: breakdown -->
+    <div class="col-md-8">
+      <!-- 5 star -->
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <span class="small">5★</span>
+        <div class="rating-bar flex-grow-1">
+          <div class="rating-bar-fill" style="width: 65%;"></div>
+        </div>
+        <span class="small text-secondary">2</span>
+      </div>
+      <!-- 4 star -->
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <span class="small">4★</span>
+        <div class="rating-bar flex-grow-1">
+          <div class="rating-bar-fill" style="width: 55%;"></div>
+        </div>
+        <span class="small text-secondary">2</span>
+      </div>
+      <!-- 3 star -->
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <span class="small">3★</span>
+        <div class="rating-bar flex-grow-1">
+          <div class="rating-bar-fill" style="width: 10%;"></div>
+        </div>
+        <span class="small text-secondary">0</span>
+      </div>
+      <!-- 2 star -->
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <span class="small">2★</span>
+        <div class="rating-bar flex-grow-1">
+          <div class="rating-bar-fill" style="width: 0%;"></div>
+        </div>
+        <span class="small text-secondary">0</span>
+      </div>
+      <!-- 1 star -->
+      <div class="d-flex align-items-center gap-2">
+        <span class="small">1★</span>
+        <div class="rating-bar flex-grow-1">
+          <div class="rating-bar-fill" style="width: 0%;"></div>
+        </div>
+        <span class="small text-secondary">0</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <!-- Review item 1 -->
+  <div class="review-item py-4">
+    <div class="d-flex gap-3">
+      <img src="https://via.placeholder.com/56" class="rounded-circle flex-shrink-0" alt="avatar" width="56" height="56">
+      <div class="flex-grow-1">
+        <div class="d-flex align-items-center gap-3 mb-1">
+          <div>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-regular fa-star star off"></i>
+          </div>
+          <span class="small text-secondary">admin</span>
+          <span class="small text-secondary">November 29, 2023</span>
+        </div>
+        <p class="mb-0">
+          It’s an excellent phone, the only bad thing is that it’s not compatible with Android Auto and I don’t see it having a short-term solution.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-0">
+
+  <!-- Review item 2 -->
+  <div class="review-item py-4">
+    <div class="d-flex gap-3">
+      <img src="https://via.placeholder.com/56" class="rounded-circle flex-shrink-0" alt="avatar" width="56" height="56">
+      <div class="flex-grow-1">
+        <div class="d-flex align-items-center gap-3 mb-1">
+          <div>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+            <i class="fa-solid fa-star star on"></i>
+          </div>
+          <span class="small text-secondary">admin</span>
+          <span class="small text-secondary">November 29, 2023</span>
+        </div>
+        <p class="mb-0">
+          I liked everything about this phone. The camera has 10x optical zoom, with image stability, this phone makes binoculars obsolete.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js" ></script>
+    </body>
+</html>
