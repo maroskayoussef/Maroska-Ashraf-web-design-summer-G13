@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>final project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../final project/css/style.css">
+</head>
+  <body>
+
+     
+   <nav  class="navbar bg-white py-3 shadow-sm fixed-top">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" width="126" height="40">
+    </a>
+
+    <div class="d-flex align-items-start">
+      <i class="fa-solid fa-phone fa-lg me-2 mt-4" style="font-size:30px;"></i>
+      <div>
+        <div>Contact us 24/7</div>
+        <a href="tel:+9239427879" class="text-dark text-decoration-none fw-bold">(+92) 3942 7879</a>
+      </div>
+    </div>
+
+    <!-- Search + Dropdown Form -->
+    <form class="d-flex bg-light rounded-3 overflow-hidden" style="max-width: 700px;">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle px-4 py-3 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Fashion</a></li>
+          <li><a class="dropdown-item" href="#">Electronics</a></li>
+        </ul>
+      </div>
+
+      <div class="vr my-auto mx-2"></div>
+
+      <input type="text" class="form-control border-0 shadow-none bg-light" placeholder="Search for product">
+
+      <button class="btn btn-dark px-4 d-flex align-items-center justify-content-center" type="submit">
+        <i class="fas fa-search text-white"></i>
+      </button>
+    </form>
+
+    <div class="d-flex align-items-center gap-4">
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-globe"></i> English
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Español</a></li>
+          <li><a class="dropdown-item" href="#">Français</a></li>
+          <li><a class="dropdown-item" href="#">Português</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+          USD
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">USD</a></li>
+          <li><a class="dropdown-item" href="#">EUR</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+        <i class="fa-regular fa-user fa-lg me-1"></i>
+        Account
+      </a>
+
+      <a href="#" class="position-relative text-dark">
+        <i class="fa-regular fa-heart fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+      </a>
+
+      <a href="#" class="position-relative text-dark">
+        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+
+
+
+<div class="border-bottom border-light-subtle"></div>
+
+<div class="bg-white py-2 border-bottom border-light-subtle">
+  <div class="container d-flex align-items-center flex-wrap justify-content-between">
+
+<div class="border-end border-2 border-light-subtle pe-3 me-3">
+  <button class="btn bg-white p-0 d-flex align-items-center shadow-none border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategories">
+    <i class="fa-solid fa-bars me-2"></i>
+    <span class="fw-semibold">SHOP BY CATEGORIES</span>
+  </button>
+</div>
+
+    <nav  class="d-flex flex-wrap align-items-center gap-4 flex-grow-1 ms-4">
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Homepages
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+          <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Categories
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Products
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">All Products</a></li>
+          <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+          Pages
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><a class="dropdown-item" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none">About us</a>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none">Blog</a>
+
+      <a href="#" class="text-dark fw-semibold text-decoration-none d-flex align-items-center">
+        <i class="fa-solid fa-ticket me-1"></i> Best Discount
+      </a>
+
+    </nav>
+
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle text-dark fw-semibold text-decoration-none" data-bs-toggle="dropdown">
+        Recently viewed
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Chair</a></li>
+        <li><a class="dropdown-item" href="#">Shoes</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-start offcanvas-cats"  id="offcanvasCategories">
+  <div class="offcanvas-header cats-header">
+    <h6 class="mb-0 text-uppercase fw-semibold"><i class="fa-solid fa-bars "></i>Shop by Categories</h6>
+  </div>
+
+  <div class="offcanvas-body p-0">
+    <nav class="cat-list">
+      <a class="cat-item"  href="#">
+        <span class="cat-icon"><i class="fa-solid fa-shirt"></i></span>
+        <span >Fashion</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+        <span>Phone & Tablet</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-laptop"></i></span>
+        <span>Laptop & Computer</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-tv"></i></span>
+        <span>TV, Audio – Video</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-camera"></i></span>
+        <span >Camera & Photo</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-couch"></i></span>
+        <span>Home & Decor</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+        <span>Beauty & Health</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-gamepad"></i></span>
+        <span >Game Accessories</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+
+      <a class="cat-item" href="#">
+        <span class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+        <span>Autopart</span>
+        <span class="cat-arrow"><i class="fa-solid fa-angle-right"></i></span>
+      </a>
+    </nav>
+  </div>
+</div>
+
+
+
+    <container class="p-5 align-center">
+        <div class="p-5 text-center">
+    <div>
+        <span class="fw-bold d-block" style="font-size: 70px;">Contact us</span>
+        <span class="text-secondary fs-6 d-block">34 Main Street, Los Angeles 9021</span>
+        <span class="text-secondary fs-6 d-block">United States</span>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center gap-5">
+    <div class="d-flex flex-column align-items-center text-center">
+        <i class="fa-solid fa-phone-volume fa-2x mb-2 align-self-start "></i>
+        <span class="fs-6 align-self-start mb-2">Customer Service</span>
+        <a href="#" class="align-self-start  mb-2 contact-link">+92 3942 7879</a>
+        <span class="fs-6 text-secondary">Call us from 8am to 8pm</span>
+    </div>
+
+    <div class="d-flex flex-column align-items-center text-center">
+        <i class="fa-solid fa-comment fa-2x mb-2 align-self-start"></i>
+        <span class="fs-6 align-self-start  mb-2">Chat with us</span>
+        <a href="#" class="align-self-start  mb-2 live-chat-link">Live Chat</a>
+        <span class="fs-6 text-secondary">Daily: 8am to 11pm</span>
+    </div>
+
+    <div class="d-flex flex-column align-items-center text-center">
+        <i class="align-self-start fa-solid fa-envelope fa-2x mb-2"></i>
+        <span class="fs-6 align-self-start  mb-2">Write to us</span>
+        <a href="#" class="contact-link">contact@example.com</a>
+    </div>
+
+<div class="d-flex flex-column text-center">
+    <i class="fa-solid fa-user fa-2x mb-2 align-self-start"></i>
+    <span class="fs-6 text-secondary mb-2 align-self-start">Follow us</span>
+    <div class="d-flex gap-2 justify-content-center red-on-hover">
+      <a href="#">  <i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#"> <i class="fab fa-tiktok fa-lg"></i></a>
+      <a href="#"> <i class="fab fa-youtube fa-lg"></i></a>
+       <a href="#">  <i class="fab fa-x-twitter fa-lg"></i></a>
+      <a href="#"> <i class="fab fa-instagram fa-lg"></i></a>
+    </div>
+</div>
+
+</div>
+
+<section class="py-4 mt-5"> 
+  <div class="container" style="max-width: 920px;">
+    <h3 class="text-center fw-bold mb-4">Do you have some questions?</h3>
+    <form id="myForm" autocomplete="off"> 
+      <div class="row g-3"> 
+        <div class="col-md-6">
+          <input type="text"
+                 id="contactName"
+                 name="name"
+                 class="form-control contact-input"
+                 placeholder="Name and Surname *"
+                 autocomplete="name"
+                 required>
+        </div>
+
+        <div class="col-md-6"> 
+          <input type="email"
+                 id="contactEmail"
+                 name="email"
+                 class="form-control contact-input"
+                 placeholder="Email *"
+                 autocomplete="email"
+                 required> 
+        </div> 
+
+        <div class="col-12">
+          <input type="text"
+                 id="contactSubject"
+                 name="subject"
+                 class="form-control contact-input"
+                 placeholder="Subject *"
+                 required>
+        </div>
+
+        <div class="col-12"> 
+          <textarea id="contactMessage"
+                    name="message"
+                    class="form-control contact-input contact-message"
+                    placeholder="Message *"
+                    rows="6"
+                    required></textarea>
+        </div>
+
+        <div class="col-12"> 
+          <button type="submit" class="btn w-100 contact-btn">GET IN TOUCH</button>
+        </div> 
+      </div>
+    </form>
+  </div> 
+</section>
+
+
+<div style="width: 100%; height: 600px;" class="mt-5">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.044431987!2d-118.74139090464179!3d34.02060840261818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1755023389935!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<section class="container py-5">
+  <h2 class="text-center fw-bold mb-4">Stores around the world</h2>
+
+  <div class="row g-5">
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="store-card h-100">
+        <div class="store-img ratio ratio-4x3 rounded-3 overflow-hidden mb-3 position-relative">
+          <img src="images/about-2.jpg" alt="Los Angeles store" class="w-100 h-100 object-fit-cover">
+          <div class="overlay"></div>
+        </div>
+        <h5 class="fw-semibold mb-2">Los Angeles</h5>
+        <p class="text-secondary mb-1">34 Main Street, Los Angeles 9021</p>
+        <p class="text-secondary mb-2">United States</p>
+        <a href="tel:+02123456788" class="link-dark fw-semibold">+02 1234 567 88</a>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="store-card h-100">
+        <div class="store-img ratio ratio-4x3 rounded-3 overflow-hidden mb-3">
+          <img src="images/about-3.jpg" alt="New York store" class="w-100 h-100 object-fit-cover">
+        </div>
+        <h5 class="fw-semibold mb-2">New York</h5>
+        <p class="text-secondary mb-1">515 Broadway 10015 New York</p>
+        <p class="text-secondary mb-2">United States</p>
+        <a href="tel:+49123456788" class="link-dark fw-semibold">+49 1234 567 88</a>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="store-card h-100">
+        <div class="store-img ratio ratio-4x3 rounded-3 overflow-hidden mb-3">
+          <img src="images/about-4.jpg" alt="California store" class="w-100 h-100 object-fit-cover">
+        </div>
+        <h5 class="fw-semibold mb-2">California</h5>
+        <p class="text-secondary mb-1">1000 California St 68114 Omaha</p>
+        <p class="text-secondary mb-2">United States</p>
+        <a href="tel:+44123456788" class="link-dark fw-semibold">+44 1234 567 88</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+    </container>
+    <!-- Footer -->
+<footer class="footer-dark py-5 text-light">
+  <div class="container">
+
+    <div class="row g-4 mb-5 align-items-start">
+      <div class="col-2">
+         <div class="mb-4">
+    <img src="images/logo (1).png" 
+         alt="Merto Logo" 
+         style="width:130px; height:auto;">
+  </div>
+        <ul class="list-unstyled small text-secondary mb-4">
+          <li class="mb-2 "><i class="fa-solid fa-location-dot me-2"></i>29 SE 2nd Ave, Miami<br><div class="ms-3"> florida 33131, United States </div> </li>
+          <li class="mb-2"><i class="fa-regular fa-envelope me-2"></i>info@example.com</li>
+        </ul>
+        <a  href="#" class="h6 fw-bold footer-phone">(+92) 3942 7879</a>
+      </div>
+
+      <div class="col-2">
+        <h6 class="text-uppercase text-white fw-semibold mb-4">Shopping</h6>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#">Wishlist</a></li>
+          <li class="mb-2"><a href="#">Shop by Brand</a></li>
+          <li class="mb-2"><a href="#">Offers</a></li>
+          <li class="mb-2"><a href="#">Track order</a></li>
+          <li class="mb-2"><a href="#">Size Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h6 class="text-uppercase text-white fw-semibold mb-4">Information</h6>
+        <ul class="list-unstyled footer-links ">
+          <li class="mb-2"><a href="#">Track Order</a></li>
+          <li class="mb-2"><a href="#" >Shipping </a></li>
+          <li class="mb-2"><a href="#">About us</a></li>
+          <li class="mb-2"><a href="#">Help</a></li>
+          <li class="mb-2"><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h6 class="text-uppercase text-white fw-semibold mb-4">Account</h6>
+        <ul class="list-unstyled footer-links">
+          <li class="mb-2"><a href="#">cart</a></li>
+          <li class="mb-2"><a href="#" >my account </a></li>
+          <li class="mb-2"><a href="#"> orders</a></li>
+          <li class="mb-2"><a href="#">wishlist</a></li>
+          <li class="mb-2"><a href="#">Affiliate programs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4">
+        <h6 class="text-uppercase text-white fw-bold mb-3">Let’s keep in touch</h6>
+
+        <div class="position-relative mb-3" style="max-width:420px">
+          <input type="email" class="form-control bg-transparent text-light border-secondary rounded-2 p-3"
+                 placeholder="enter your email address">
+          <button class="btn  border-0 position-absolute top-50 end-0 translate-middle-y me-1 footer-arrow">
+            <i class="fa-solid fa-arrow-right-long text-white"></i>
+          </button>
+        </div>
+
+        <div class="d-flex gap-3 fs-5 footer-icons">
+          <a class="text-white" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a class="text-white" href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="text-white" href="#"><i class="fa-solid fa-x"></i></a>
+          <a class="text-white" href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row p-3 rounded-3  custom-border ">
+      <div class="col-4 ">
+        <div class="foot-card d-flex align-items-center gap-3 p-3 ms-4 ">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <div class="fw-semibold">Didn’t find what you were looking for?</div>
+            <a href="#" class= "f-link link-light">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="foot-card d-flex align-items-center gap-3 p-3 ms-3 ">
+          <i class="fa-regular fa-face-smile fs-3"></i>
+          <div>
+            <div class="fw-semibold">How can we help you today?</div>
+            <a href="#" class="f-link link-light">Help Center</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="foot-card d-flex align-items-center gap-3 p-3 ">
+          <i class="fa-solid fa-comments"></i>
+          <div>
+            <div class="fw-semibold">We’d love to hear what you think!</div>
+            <a href="#" class="f-link link-light ">Give Feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between pt-3 ">
+      <div class="small text-secondary">Copyright © Merto. All Rights Reserved</div>
+      <div class="d-flex gap-2 mt-3 mt-lg-0">
+        <img src="images/payment-icons-1.png" height="30" alt="PayPal">
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+<script src="js/script.js"></script>
+  </body>
+
+</html>

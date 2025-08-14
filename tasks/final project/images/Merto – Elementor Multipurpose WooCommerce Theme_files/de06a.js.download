@@ -1,0 +1,21 @@
+jQuery(function($){"use strict";function get_wishlist(){var wishlist=[];var cookie=ts_get_cookie(ts_wishlist_params.cookie_name);if(cookie&&typeof cookie=='string'){wishlist=cookie.split(',');}
+if(!Array.isArray(wishlist)){wishlist=[];}
+return wishlist;}
+function set_wishlist(wishlist){if(Array.isArray(wishlist)){wishlist=wishlist.join(',');}
+ts_set_cookie(ts_wishlist_params.cookie_name,wishlist,{expires:7,secure:ts_wishlist_params.cookie_secure==1,path:ts_wishlist_params.cookie_path,domain:ts_wishlist_params.cookie_domain});}
+function update_count(){var wishlist=get_wishlist();$('.tini-wishlist .count-number').text(wishlist.length);}
+function add_to_wishlist(product_id){var wishlist=get_wishlist();var index=wishlist.indexOf(product_id);if(index==-1){wishlist.push(product_id);set_wishlist(wishlist);}}
+function remove_from_wishlist(product_id){var wishlist=get_wishlist();var index=wishlist.indexOf(product_id);if(index!=-1){wishlist.splice(index,1);set_wishlist(wishlist);}}
+var _is_process_ajax=false;$(document).on('click','.ts-add-to-wishlist, .ts-remove-from-wishlist',function(e){var button=$(this);var wishlist_action=button.hasClass('link-after-added')?'link':'remove';if(wishlist_action=='link'&&button.hasClass('added')){return;}
+e.preventDefault();var logged_in=$('body').hasClass('logged-in');if(!logged_in&&!navigator.cookieEnabled){alert(ts_wishlist_params.cookie_alert);return false;}
+var product_id=button.attr('data-id');var buttons=$('.ts-add-to-wishlist[data-id="'+product_id+'"]');var has_table=$('.ts-wishlist-table-wrapper').length?1:0;var is_adding=button.hasClass('added')?false:true;if(!logged_in&&!has_table){if(is_adding){add_to_wishlist(product_id);buttons.addClass('added');if(wishlist_action=='link'){buttons.attr('href',ts_wishlist_params.wishlist_url);}}
+else{remove_from_wishlist(product_id);buttons.removeClass('added');}
+update_count();return false;}
+if(_is_process_ajax){alert(ts_wishlist_params.wait_alert);return false;}
+_is_process_ajax=true;var ajax_action=is_adding?'ts_add_to_wishlist':'ts_remove_from_wishlist';button.addClass('loading');button.closest('.ts-wishlist-table-wrapper').addClass('loading');$.ajax({type:"POST",timeout:30000,url:themesky_params.ajax_uri,data:{action:ajax_action,product_id:product_id,has_table:has_table,nonce:ts_wishlist_params.ajax_nonce},error:function(xhr,err){},success:function(response){if(response){if(is_adding){buttons.addClass('added');if(wishlist_action=='link'){buttons.attr('href',ts_wishlist_params.wishlist_url);}}
+else{buttons.removeClass('added');}
+if(typeof response.fragments!='undefined'){$.each(response.fragments,function(key,value){$(key).replaceWith(value);});}}
+button.removeClass('loading');_is_process_ajax=false;}});});$('body').on('added_to_cart',function(e,fragments,cart_hash,$button){if(typeof $button!=='undefined'&&$button.closest('.ts-wishlist-table-wrapper').length){var message=$button.closest('.ts-wishlist-table-wrapper').siblings('.woocommerce-notices-wrapper');if(message.length){message.replaceWith(ts_wishlist_params.added_to_cart_message);}
+else{$button.closest('.ts-wishlist-table-wrapper').before(ts_wishlist_params.added_to_cart_message);}
+if(ts_wishlist_params.remove_wishlist_after_addedtocart==1){$button.closest('.wishlist-item').find('.ts-remove-from-wishlist').trigger('click');}}});function update_fragments(){update_count();var wishlist=get_wishlist();$('.ts-add-to-wishlist').removeClass('added');wishlist.forEach(function(product_id){$('.ts-add-to-wishlist[data-id="'+product_id+'"]').addClass('added');});}
+if(ts_wishlist_params.has_cache==1){update_fragments();}});
